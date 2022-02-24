@@ -6,7 +6,7 @@
 ## To-Do
 
 * [x] navbar
-* [ ] header
+* [x] header
 * [ ] footer
 * [x] webpack 번들 파일 생성
 

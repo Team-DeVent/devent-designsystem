@@ -87,8 +87,7 @@ class NavbarItem extends HTMLElement {
     }
 }
 
-    
-customElements.define('dds-navbar', Navbar);
-customElements.define('dds-navbar-item', NavbarItem);
+export { Navbar, NavbarItem }
+
 
 

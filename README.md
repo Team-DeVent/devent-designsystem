@@ -8,6 +8,10 @@
 * [x] navbar
 * [x] header
 * [ ] footer
+
+* [x] modal
+* [ ] alert
+
 * [x] webpack 번들 파일 생성
 
 ## 목표

@@ -1,3 +1,7 @@
+:root {
+    --borderRadius: 10px;
+}
+
 .navbar-blur {
     background-color: #ffffffd5;
     -webkit-backdrop-filter: saturate(120%) blur(16px);
@@ -24,8 +28,13 @@
     color: #212529 !important;
 }
 
-.btn-rounded {
-    border-radius: 10px;
+.btn {
+    border-radius: var(--borderRadius) !important;
+}
+
+.modal-content {
+    border-radius: var(--borderRadius);
+    box-shadow: 2px 0px 40px 5px #272d331e;
 }
 
 

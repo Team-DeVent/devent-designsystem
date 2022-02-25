@@ -34,7 +34,7 @@ class Header extends HTMLElement {
         sub_title.innerText = subtitle
 
         body_button.classList.add('d-grid', 'gap-3', 'd-sm-flex', 'justify-content-sm-center')
-        main_button.classList.add('btn', 'color-blue-100', 'text-primary', 'font-weight-sm', 'px-4', 'py-3', 'mt-2', 'btn-rounded')
+        main_button.classList.add('btn', 'color-blue-100', 'text-primary', 'font-weight-sm', 'px-4', 'py-3', 'mt-2')
 
 
         main_button.setAttribute('onclick', `location.href = '${buttonlink}'`)

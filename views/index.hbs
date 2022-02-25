@@ -15,18 +15,29 @@
     </dds-header>
 
 
+
+
+
     
     <section class="py-1" id="features">
         <div class="container-fluid px-4 my-5">
             <div class="row gx-5">
                 <div class="col-lg-3">
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                    <h2 class="h4 fw-bolder">Featured title</h2>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a class="text-decoration-none" href="#!">
-                        Call to action
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
+                    <h2 class="h4 fw-bolder">모달</h2>
+                    <p>부트스트랩 5와 데벤트 디자인 시스템이 만나 더 새로워지고 강력해진 모달로 돌아왔어요. div의 늪에서 빠져나올 준비, 되셨나요?</p>
+                    
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aaa">
+                    Launch demo modal
+                    </button>
+
+                    <dds-modal
+                    modal-id="aaa"
+                    modal-title="테스트 모달이에요."
+                    modal-subtitle="명품 프로덕트의 시작은 언제나 모달이죠.">
+                        <dds-modal-button button-color="color-blue-100" button-text-color="text-primary" is-dismiss="false">저장</dds-modal-button>
+                        <dds-modal-button button-color="btn-light" button-text-color="text-dark" is-dismiss="true">취소</dds-modal-button>
+                    </dds-modal>
                 </div>
                 <div class="col-lg-6">
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
@@ -57,8 +68,6 @@
         </div>
     </section>
 
-
- 
 
     {{> footer}}
 

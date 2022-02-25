@@ -35,3 +35,18 @@ npm run bundle:development
 ```
 npm run bundle:production
 ```
+
+
+## 기술
+
+**FE**
+
+Web Components  
+Bootstrap 5 (add shard ui)  
+Webpack  
+
+
+**BE**
+
+Node v17.5  
+Express  

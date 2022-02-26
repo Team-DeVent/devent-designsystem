@@ -1,0 +1,39 @@
+
+
+@import 'foundation/color';
+
+
+
+.btn {
+  border-radius: $border-radius;
+  border-color: transparent;
+  padding: $button-padding !important;
+}
+
+.btn-primary {
+  background-color: $blue-100;
+  color: $blue-300;
+  &:hover {
+    background-color: $blue-200;
+    border-color: transparent;
+    box-shadow: none;
+    color: $blue-300;
+  }
+
+  &:focus {
+    background-color: $blue-200;
+    border-color: transparent;
+    box-shadow: none;
+    color: $blue-300;
+  }
+}
+
+.btn-light {
+  background-color: $light;
+  color: $dark;
+}
+
+.btn-dark {
+  background-color: $dark;
+  color: $light;
+}

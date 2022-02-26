@@ -5,14 +5,28 @@
 
 ## To-Do
 
+**feat(js)**
+
 * [x] navbar
 * [x] header
-* [ ] footer
-
 * [x] modal
 * [ ] alert
+* [ ] footer
+
+**feat(scss)**
+
+* [x] button
+
+**module**
 
 * [x] webpack 번들 파일 생성
+* [x] scss 적용
+
+**docs**
+
+* [ ] index 페이지 문서 생성
+* [ ] 디자인 가이드/철학/목표 명시
+
 
 ## 목표
 

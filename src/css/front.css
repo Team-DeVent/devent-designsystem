@@ -2,28 +2,6 @@
     --borderRadius: 10px;
 }
 
-.navbar-blur {
-    background-color: #ffffffd5;
-    -webkit-backdrop-filter: saturate(120%) blur(16px);
-    backdrop-filter: saturate(120%) blur(16px);
-}
-.navbar-brand {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 500 !important;
-}
-.navbar-toggler {
-    outline: none;
-    border-color: transparent !important;
-    box-shadow: transparent;
-}
-.navbar-toggler:focus {
-    box-shadow: none !important;
-}
-
-.navbar-toggler > .icon-close {
-    display: none;
-}
-
 .btn-outline-light:hover {
     color: #212529 !important;
 }
@@ -38,27 +16,7 @@
 }
 
 
-.font-title {
-    font-family: 'Noto Sans KR', sans-serif;
-    word-break: keep-all;
-}
 
-.font-weight-lg {
-    font-family: 'Noto Sans KR', sans-serif;
-    word-break: keep-all;
-    font-weight: 700 !important;
-}
-.font-weight-md {
-    font-family: 'Noto Sans KR', sans-serif;
-    word-break: keep-all;
-    font-weight: 500 !important;
-}
-
-.font-weight-sm {
-    font-family: 'Noto Sans KR', sans-serif;
-    word-break: keep-all;
-    font-weight: 400 !important;
-}
 
 
 .card-title{

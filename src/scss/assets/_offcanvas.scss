@@ -1,0 +1,20 @@
+@import 'foundation/color';
+@import 'foundation/variable';
+
+
+
+.offcanvas {
+    background-color: #ffffffa6;
+    -webkit-backdrop-filter: saturate(120%) blur(16px);
+    backdrop-filter: saturate(120%) blur(16px);
+}
+
+.nav-link {
+    text-align:left; 
+    padding-left:0px !important;
+}
+
+.offcanvas-header > i {
+    padding: 0rem 0rem !important;
+    margin-bottom: 0rem !important;
+}

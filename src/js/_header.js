@@ -1,6 +1,8 @@
 class Header extends HTMLElement { 
 
     connectedCallback() {
+        let allelements = this.querySelector('*')
+
         let maintitle = this.getAttribute('header-title')
         let subtitle = this.getAttribute('header-sub-title')
         let buttonlink = this.getAttribute('button-link')
@@ -42,13 +44,24 @@ class Header extends HTMLElement {
 
 
 
-        body_button.appendChild(main_button)
+
+
+        //body_button.appendChild(main_button)
 
         body_text.appendChild(main_title)
         body_text.appendChild(sub_title)
 
         body_col.appendChild(body_text)
-        body_col.appendChild(body_button)
+
+        console.log(allelements)
+
+        /*
+
+        for (let index = allelements.length-1; index > -1; index--) {
+            body_col.appendChild(allelements[index])
+        }
+        */
+        body_col.appendChild(allelements)
 
         body_row.appendChild(body_col)
         body_container.appendChild(body_row) 

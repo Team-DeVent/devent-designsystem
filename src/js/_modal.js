@@ -44,7 +44,7 @@ class Modal extends HTMLElement {
         console.log(button_elements, button_elements.length)
 
         for (let index = button_elements.length-1; index > -1; index--) {
-            button_group.appendChild(document.body.getElementsByTagName('dds-modal-button')[index])
+            button_group.appendChild(button_elements[index])
         }
 
 

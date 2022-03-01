@@ -13,6 +13,10 @@
 * [ ] alert
 * [ ] footer
 
+* [x] sidebar
+* [ ] tab
+
+
 **feat(scss)**
 
 * [x] button

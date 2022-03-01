@@ -1,5 +1,4 @@
 class Header extends HTMLElement { 
-
     connectedCallback() {
         let allelements = this.querySelector('*')
 
@@ -38,29 +37,15 @@ class Header extends HTMLElement {
         body_button.classList.add('d-grid', 'gap-3', 'd-sm-flex', 'justify-content-sm-center')
         main_button.classList.add('btn', 'btn-primary', 'font-weight-sm', 'px-4', 'py-3', 'mt-2')
 
-
         main_button.setAttribute('onclick', `location.href = '${buttonlink}'`)
         main_button.innerText = buttontitle
 
-
-
-
-
-        //body_button.appendChild(main_button)
 
         body_text.appendChild(main_title)
         body_text.appendChild(sub_title)
 
         body_col.appendChild(body_text)
 
-        console.log(allelements)
-
-        /*
-
-        for (let index = allelements.length-1; index > -1; index--) {
-            body_col.appendChild(allelements[index])
-        }
-        */
         body_col.appendChild(allelements)
 
         body_row.appendChild(body_col)
@@ -69,7 +54,5 @@ class Header extends HTMLElement {
         this.appendChild(body_header)
     }
 }
-
-
 
 export { Header }

@@ -1,10 +1,6 @@
 class Modal extends HTMLElement { 
-
     connectedCallback() {
         let button_elements = this.getElementsByTagName('dds-modal-button')
-
-
-
 
         let modalid = this.getAttribute('modal-id')
         let modalmaintitle = this.getAttribute('modal-title')
@@ -22,7 +18,6 @@ class Modal extends HTMLElement {
         let button_group = document.createElement('div')
 
 
-
         body.classList.add('modal', 'fade');
         body.setAttribute('id', modalid)
         body.setAttribute('tabindex', '-1')
@@ -33,7 +28,6 @@ class Modal extends HTMLElement {
         modal_content.classList.add('modal-content')
         modal_body.classList.add('modal-body')
 
-
         modal_main_title.classList.add('modal-title', 'font-weight-lg')
         modal_main_title.innerText = modalmaintitle
         modal_sub_title.classList.add('font-weight-md')
@@ -41,15 +35,10 @@ class Modal extends HTMLElement {
 
         button_group.classList.add('d-grid', 'gap-2', 'd-flex', 'justify-content-end')
 
-        console.log(button_elements, button_elements.length)
 
         for (let index = button_elements.length-1; index > -1; index--) {
             button_group.appendChild(button_elements[index])
         }
-
-
-        //button_group.appendChild(button_elements.item(1))
-
 
         modal_body.appendChild(modal_main_title)
         modal_body.appendChild(modal_sub_title)
@@ -66,29 +55,18 @@ class Modal extends HTMLElement {
 
 class ModalButton extends HTMLElement { 
     connectedCallback() {
-
         let isdismiss = this.getAttribute('is-dismiss')
         let buttoncolor = this.getAttribute('button-color')
         let textcolor = this.getAttribute('button-text-color')
 
-        let text = this.innerText
-
-
-
-
         this.classList.add('col', 'col-md-auto', 'btn', buttoncolor, textcolor);
         this.setAttribute('type', 'button')
+
         if (isdismiss == 'true') {
             this.setAttribute('data-bs-dismiss', 'modal')
         }
-
-        //this.innerText = text
-
     }
 }
 
 
-
-
 export { Modal, ModalButton }
-

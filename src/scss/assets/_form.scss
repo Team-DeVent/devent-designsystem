@@ -1,12 +1,14 @@
 @import 'foundation/color';
+@import 'foundation/variable';
 
-.form-textarea{
-    border: none !important;
-}
+
 
 .form-control{
     background-color: $light-100;
     border-radius: $border-radius;
+    border: none !important;
+    box-shadow: none !important;
+
     &:focus {
         background-color: $light-100;
     }

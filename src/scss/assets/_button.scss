@@ -1,39 +1,58 @@
 
 
 @import 'foundation/color';
-
+@import 'foundation/variable';
 
 
 .btn {
   border-radius: $border-radius;
   border-color: transparent;
   padding: $button-padding !important;
+  font-family: 'Noto Sans KR', sans-serif;
+  word-break: keep-all;
+  font-weight: 400 !important;
 }
 
 .btn-primary {
   background-color: $blue-100;
   color: $blue-300;
-  &:hover {
-    background-color: $blue-200;
-    border-color: transparent;
-    box-shadow: none;
-    color: $blue-300;
-  }
-
-  &:focus {
-    background-color: $blue-200;
-    border-color: transparent;
-    box-shadow: none;
-    color: $blue-300;
+  &:hover, &:focus, &:active, &:visited {
+    background-color: $blue-200 !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: $blue-300 !important;
   }
 }
 
 .btn-light {
-  background-color: $light;
+  background-color: $light-100;
   color: $dark;
+  &:hover, &:focus, &:active, &:visited {
+    background-color: $light-200 !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: $dark !important;
+  }
 }
 
 .btn-dark {
   background-color: $dark;
-  color: $light;
+  color: $light-100;
+  &:hover, &:focus, &:active, &:visited {
+    background-color: $dark !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: $light-100 !important;
+  }
+}
+
+.btn-success {
+  background-color: $green-100;
+  color: $green-300;
+  &:hover, &:focus, &:active, &:visited {
+    background-color: $green-200 !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: $green-300 !important;
+  }
 }

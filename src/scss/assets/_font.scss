@@ -1,3 +1,6 @@
+@import 'foundation/color';
+@import 'foundation/variable';
+
 
 .font-title {
     font-family: 'Noto Sans KR', sans-serif;
@@ -19,4 +22,25 @@
     font-family: 'Noto Sans KR', sans-serif;
     word-break: keep-all;
     font-weight: 400 !important;
+}
+
+.close {
+    font-size: 13px !important;
+}
+
+b {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400 !important;
+}
+
+pre {
+    border: transparent !important;
+    background-color: $light-100;
+    border-radius: $border-radius;
+    overflow-x: scroll !important;
+
+}
+
+code {
+    overflow-x: scroll !important;
 }

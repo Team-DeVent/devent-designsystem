@@ -25,7 +25,7 @@ class Header extends HTMLElement {
 
         body_row.classList.add('row', 'gx-5', 'justify-content-center')
         body_col.classList.add('col-lg-7')
-        body_text.classList.add('text-center', 'my-5')
+        body_text.classList.add('text-center', 'mt-5')
 
         main_title.classList.add('display-5', 'fw-bolder', 'text-dark', 'font-weight-lg', 'mb-2')
         main_title.innerText = maintitle

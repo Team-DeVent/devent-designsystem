@@ -16,6 +16,8 @@
 **feat(scss)**
 
 * [x] button
+* [ ] color set (blue, red, green, yellow)
+
 
 **module**
 
@@ -24,7 +26,7 @@
 
 **docs**
 
-* [ ] index 페이지 문서 생성
+* [x] index 페이지 문서 생성
 * [ ] 디자인 가이드/철학/목표 명시
 
 

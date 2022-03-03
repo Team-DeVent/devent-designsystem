@@ -13,7 +13,7 @@
   font-weight: 400 !important;
 }
 
-.btn-primary {
+.btn-blue {
   background-color: $blue-100;
   color: $blue-300;
   &:hover, &:focus, &:active, &:visited {
@@ -46,7 +46,7 @@
   }
 }
 
-.btn-success {
+.btn-green {
   background-color: $green-100;
   color: $green-300;
   &:hover, &:focus, &:active, &:visited {
@@ -54,5 +54,27 @@
     border-color: transparent !important;
     box-shadow: none !important;
     color: $green-300 !important;
+  }
+}
+
+.btn-red {
+  background-color: $red-100;
+  color: $red-300;
+  &:hover, &:focus, &:active, &:visited {
+    background-color: $red-200 !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: $red-300 !important;
+  }
+}
+
+.btn-yellow {
+  background-color: $yellow-100;
+  color: $yellow-300;
+  &:hover, &:focus, &:active, &:visited {
+    background-color: $yellow-200 !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: $yellow-300 !important;
   }
 }

@@ -14,7 +14,7 @@
         button-title="보러가기">
         
         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-            <button class="btn btn-primary font-weight-sm px-4 py-3 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <button class="btn btn-blue font-weight-sm px-4 py-3 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 사이드바 열기
             </button>
         </div>
@@ -36,12 +36,13 @@
 
                     <div class="nav flex-column me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-                        <button class="nav-link btn active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-                        <button class="nav-link btn" id="v-pills-header-tab" data-bs-toggle="pill" data-bs-target="#v-pills-header" type="button" role="tab" aria-controls="v-pills-header" aria-selected="false">Header</button>
+                        <button class="nav-link btn active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="hideSidebar()">Home</button>
+                        <button class="nav-link btn" id="v-pills-header-tab" data-bs-toggle="pill" data-bs-target="#v-pills-header" type="button" role="tab" aria-controls="v-pills-header" aria-selected="false" onclick="hideSidebar()">Header</button>
+                        <button class="nav-link btn" id="v-pills-navbar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-navbar" type="button" role="tab" aria-controls="v-pills-navbar" aria-selected="false" onclick="hideSidebar()">Navbar</button>
 
-                        <button class="nav-link btn" id="v-pills-button-tab" data-bs-toggle="pill" data-bs-target="#v-pills-button" type="button" role="tab" aria-controls="v-pills-button" aria-selected="false">Button</button>
-                        <button class="nav-link btn" id="v-pills-modal-tab" data-bs-toggle="pill" data-bs-target="#v-pills-modal" type="button" role="tab" aria-controls="v-pills-modal" aria-selected="false">Modal</button>
-                        <button class="nav-link btn" id="v-pills-form-tab" data-bs-toggle="pill" data-bs-target="#v-pills-form" type="button" role="tab" aria-controls="v-pills-form" aria-selected="false">Form</button>
+                        <button class="nav-link btn" id="v-pills-button-tab" data-bs-toggle="pill" data-bs-target="#v-pills-button" type="button" role="tab" aria-controls="v-pills-button" aria-selected="false" onclick="hideSidebar()">Button</button>
+                        <button class="nav-link btn" id="v-pills-modal-tab" data-bs-toggle="pill" data-bs-target="#v-pills-modal" type="button" role="tab" aria-controls="v-pills-modal" aria-selected="false" onclick="hideSidebar()">Modal</button>
+                        <button class="nav-link btn" id="v-pills-form-tab" data-bs-toggle="pill" data-bs-target="#v-pills-form" type="button" role="tab" aria-controls="v-pills-form" aria-selected="false" onclick="hideSidebar()">Form</button>
                     </div>
                 </dds-sidebar>
 
@@ -49,73 +50,86 @@
                 <div class="col tab-content" id="v-pills-tabContent">
 
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">소개</h2>
+                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">한 마음, 한 뜻으로</h2>
+                        <p class="font-weight-sm mb-4">
+                            데벤트 디자인 시스템은 모든 서비스의 일관성을 지향헤요.
+                            동시에 각 서비스만의 개성을 강조하며 전체를 커버할 수 있는 확장성 또한 고려해야합니다.
+                            이 같은 노력은 모두 데벤트의 효율적인 개발을 위해 존재하죠.
+                        </p>
 
-                        <b>데벤트 디자인 시스템은 모든 서비스의 일관성을 지향합니다. 
-                            동시에 각 서비스만의 개성을 강조하며 전체를 커버할 수 있는 확장성 또한 고려됩니다.  
-                            이 같은 노력은 효율적인 개발을 위해 존재합니다.
-                        </b>
-                        <br><br>
-
-                        <h2 class="h4 font-title font-weight-md fw-bolder">철학</h2>
-
-                        <b>
+                        <h2 class="h4 font-title font-weight-md fw-bolder">우리만의 철학</h2>
+                        <p class="font-weight-sm mb-4">
                             기술 윤리, 투명성, 지속적인 도전 <br>
-
-                            데벤트 디자인 시스템이 갖추어야 할 철학입니다.
-                        </b>
-
-
+                            데벤트 디자인 시스템이 갖추어야 할 철학이에요.
+                        </p>
 
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-header" role="tabpanel" aria-labelledby="v-pills-header-tab">
                         <h2 class="h4 font-title fw-bolder font-weight-md mt-2">헤더 </h2>
+                        <p class="font-weight-sm mb-4">
+                            헤더 디자인은 사용자가 처음으로 마주하는 중요한 페이지에요.
+                            불필요한 메시지는 제외하고 하나의 제목, 하나의 부제목, 하나의 버튼 원칙을 고수해야합니다.
+                            따라서 직관적인 메시지를 심플하게 보여주는게 디자인 시스템의 핵심이죠.
+                        </p>
 
-                        <b>헤더 디자인은 사용자가 처음으로 마주하는 중요한 페이지 입니다.
-                            따라서 직관적인 메시지를 심플하게 보여주어야 합니다.
-                            불필요한 메시지는 제외하고 하나의 제목, 하나의 부제목, 하나의 버튼 원칙을 고수합니다.
-                        </b>
-                        <br><br>
-
-
-
-<pre class="mt-4"><code data-language="html">&lt;dds-header 
+                        <pre class="mt-4">
+                            <code data-language="html">
+&lt;dds-header 
     header-title=&quot;디자인, 경계를 넘어&quot;
     header-sub-title=&quot;데벤트의 디자인 시스템은 디자인의 경계를 뛰어넘는 우아함을 선사합니다. 그야말로 경이로움에 가까운 전율을 느낄 수 있죠.&quot;
-    button-link=&quot;/&quot;
-    button-title=&quot;보러가기&quot;&gt;
-&lt;/dds-header&gt;
-</code></pre>
+&lt;/dds-header&gt;</code>
+                        </pre>
+                    </div>
 
+                    <div class="tab-pane fade" id="v-pills-navbar" role="tabpanel" aria-labelledby="v-pills-navbar-tab">
+                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">네비게이션 바 </h2>
+                        <p class="font-weight-sm mb-4">
+                            네비게이션 바는 사용자가 쉽게 페이지를 이동할 수 있도록 타이틀과 링크로 이루어져 있어요.
+                            타이틀 바에는 서비스의 이름만 적고, 나머지는 적을 수 없어요.
+                            링크에는 텍스트와 아이콘 중 하나를 선택하여 통일시켜야 해요.
+                        </p>
+
+                        <pre class="mt-4">
+                            <code data-language="html">
+&lt;dds-navbar nav-title=&quot;DDS&quot;&gt;
+    &lt;dds-navbar-item item-title=&quot;소개&quot; item-link=&quot;/intro&quot;&gt;&lt;/dds-navbar-item&gt;
+&lt;/dds-navbar&gt;</code>
+                        </pre>
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-button" role="tabpanel" aria-labelledby="v-pills-button-tab">
                         <h2 class="h4 fw-bolder font-weight-md mt-2">버튼 </h2>
-                        <b class="mb-2">
+                        <p class="font-weight-sm mb-4">
                             라이트 테마에서의 버튼 디자인은 파스텔톤 위주의 컬러를 권고합니다.
                             색상은 primary(blue), success(green), light(white), dark(black) 을 지원합니다. 
-                            
-                        </b>
-                        <br> <br>
+                        </p>
 
-                    <button class="btn btn-primary">Primary</button>
-                    <button class="btn btn-success">Success</button>
+
+                    <button class="btn btn-blue">Blue</button>
+                    <button class="btn btn-green">Success</button>
+                    <button class="btn btn-red">Red</button>
+                    <button class="btn btn-yellow">Yellow</button>
                     <button class="btn btn-light">Light</button>
                     <button class="btn btn-dark">Dark</button>
 
-<pre class="mt-4"><code data-language="html"><button class="btn btn-primary">Primary</button>
-<button class="btn btn-success" >Success</button>
+<pre class="mt-4"><code data-language="html">
+<button class="btn btn-blue">Blue</button>
+<button class="btn btn-green">Success</button>
+<button class="btn btn-red">Red</button>
+<button class="btn btn-yellow">Yellow</button>
 <button class="btn btn-light" >Light</button>
-<button class="btn btn-dark">Dark</button>
-</code></pre>
+<button class="btn btn-dark">Dark</button></code></pre>
 
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-modal" role="tabpanel" aria-labelledby="v-pills-modal-tab">
                         <h2 class="h4 fw-bolder font-weight-md mt-2">모달</h2>
-                        <b class="mb-2">부트스트랩 5와 데벤트 디자인 시스템이 만나 더 새로워지고 강력해진 모달로 돌아왔어요. div의 늪에서 빠져나올 준비, 되셨나요?</b> <br>
-                    
+                        <p class="font-weight-sm mb-4">
+                            부트스트랩 5와 데벤트 디자인 시스템이 만나 더 새로워지고 강력해진 모달로 돌아왔어요. 
+                            div의 늪에서 빠져나올 준비, 되셨나요?
+                        </p>
+
                         <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#aaa">
                         Launch demo modal
                         </button>
@@ -124,7 +138,7 @@
                         modal-id="aaa"
                         modal-title="테스트 모달이에요."
                         modal-subtitle="명품 프로덕트의 시작은 언제나 모달이죠.">
-                            <dds-modal-button button-color="btn-primary" button-text-color="text-primary" is-dismiss="false">저장</dds-modal-button>
+                            <dds-modal-button button-color="btn-blue" button-text-color="text-primary" is-dismiss="false">저장</dds-modal-button>
                             <dds-modal-button button-color="btn-light" button-text-color="text-dark" is-dismiss="true">취소</dds-modal-button>
                         </dds-modal>
 
@@ -140,7 +154,7 @@
     modal-id=&quot;aaa&quot;
     modal-title=&quot;테스트 모달이에요.&quot;
     modal-subtitle=&quot;명품 프로덕트의 시작은 언제나 모달이죠.&quot;&gt;
-        &lt;dds-modal-button button-color=&quot;btn-primary&quot; button-text-color=&quot;text-primary&quot; is-dismiss=&quot;false&quot;&gt;저장&lt;/dds-modal-button&gt;
+        &lt;dds-modal-button button-color=&quot;btn-blue&quot; button-text-color=&quot;text-primary&quot; is-dismiss=&quot;false&quot;&gt;저장&lt;/dds-modal-button&gt;
         &lt;dds-modal-button button-color=&quot;btn-light&quot; button-text-color=&quot;text-dark&quot; is-dismiss=&quot;true&quot;&gt;취소&lt;/dds-modal-button&gt;
 &lt;/dds-modal&gt;
 </code></pre>
@@ -149,16 +163,16 @@
 
                     <div class="tab-pane fade" id="v-pills-form" role="tabpanel" aria-labelledby="v-pills-form-tab">
                         
-                        <h2 class="h4 fw-bolder font-weight-md mt-2">Textarea </h2>
+                        <h2 class="h4 fw-bolder font-weight-md mt-2">텍스트입력 </h2>
 
                         <div class="mb-3">
-                            <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" rows="3"></textarea>
                         </div>
 
-                        <h2 class="h4 fw-bolder font-weight-md mt-2">Input </h2>
+                        <h2 class="h4 fw-bolder font-weight-md mt-2">입력 </h2>
 
                         <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <input type="text" class="form-control"  placeholder="name@example.com">
                         </div>
 
 
@@ -172,6 +186,17 @@
 
 
     {{> footer}}
+
+    <script>
+        var myOffcanvas = document.getElementById('offcanvasExample')
+        var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
+
+        function hideSidebar() {
+            bsOffcanvas.toggle()
+            bsOffcanvas.toggle()
+            bsOffcanvas.hide()
+        }
+    </script>
 
 
   </body>

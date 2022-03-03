@@ -10,7 +10,8 @@ class Sidebar extends HTMLElement {
         body.setAttribute('id', id)
         body.setAttribute('aria-labelledb', 'offcanvasExampleLabel')
         body.setAttribute('tabindex', '-1')
-        body.setAttribute('tabindex', '-1')
+        body.setAttribute('data-bs-scroll', 'true')
+        body.setAttribute('data-bs-backdrop', 'false')
 
         let body_header = document.createElement('div')
         body_header.classList.add('offcanvas-header');

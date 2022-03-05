@@ -60,7 +60,6 @@ class ModalButton extends HTMLElement {
         let textcolor = this.getAttribute('button-text-color')
 
         this.classList.add('col', 'col-md-auto', 'btn', buttoncolor, textcolor);
-        this.setAttribute('type', 'button')
 
         if (isdismiss == 'true') {
             this.setAttribute('data-bs-dismiss', 'modal')

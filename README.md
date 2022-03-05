@@ -20,7 +20,7 @@
 **feat(scss)**
 
 * [x] button
-* [ ] color set (blue, red, green, yellow)
+* [x] color set (blue, red, green, yellow)
 
 
 **module**

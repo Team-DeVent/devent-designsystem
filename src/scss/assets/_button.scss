@@ -4,7 +4,7 @@
 @import 'foundation/variable';
 
 
-.btn {
+.btn{
   border-radius: $border-radius;
   border-color: transparent;
   padding: $button-padding !important;
@@ -12,6 +12,7 @@
   word-break: keep-all;
   font-weight: 400 !important;
 }
+
 
 .btn-blue {
   background-color: $blue-100;

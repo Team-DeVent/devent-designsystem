@@ -2,5 +2,21 @@
 
 .modal-content {
     border-radius: $border-radius;
+    border: transparent;
     box-shadow: 2px 0px 45px 6px #272d331e;
 }
+
+.modal-body {
+    padding: 1.875rem 2.1875rem;
+}
+
+.modal-backdrop {
+  
+    // Fade for backdrop
+    &.fade { 
+        opacity: 0; 
+    }
+    &.show { 
+        opacity: .11; 
+    }
+  }

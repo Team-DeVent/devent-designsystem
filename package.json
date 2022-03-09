@@ -2,8 +2,9 @@
   "type": "module",
   "name": "dds",
   "version": "1.0.0",
-  "description": "DeVent Design System",
-  "main": "app.js",
+  "description": "DeVent Design System, bootstrap based design system for a sense of unity.",
+  "homepage": "https://github.com/Team-DeVent/devent-designsystem",
+  "browser": "dist/main.js",
   "scripts": {
     "start": "node app.js",
     "bundle:development": "webpack --mode=development",
@@ -11,14 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Team-DeVent/devent-frame"
+    "url": "git+https://github.com/Team-DeVent/devent-designsystem"
   },
   "author": "dipokalhhj",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Team-DeVent/devent-frame/issues"
+    "url": "https://github.com/Team-DeVent/devent-designsystem/issues"
   },
-  "homepage": "https://github.com/Team-DeVent/devent-frame#readme",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "body-parser": "^1.19.1",
     "cookie-parser": "^1.4.6",

@@ -64,6 +64,20 @@ npm run bundle:development
 npm run bundle:production
 ```
 
+## CDN
+
+**Style**
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Team-DeVent/devent-designsystem/dist/style.css"/>
+```
+
+**JS**
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/Team-DeVent/devent-designsystem/dist/main.js"></script>
+```
+
 
 ## 기술
 

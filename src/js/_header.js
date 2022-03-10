@@ -46,7 +46,7 @@ class Header extends HTMLElement {
 
         body_col.appendChild(body_text)
 
-        body_col.appendChild(allelements)
+        if(allelements != null) body_col.appendChild(allelements)
 
         body_row.appendChild(body_col)
         body_container.appendChild(body_row) 

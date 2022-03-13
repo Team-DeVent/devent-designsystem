@@ -14,7 +14,7 @@ class Sidebar extends HTMLElement {
         body.setAttribute('data-bs-backdrop', 'false')
 
         let body_header = document.createElement('div')
-        body_header.classList.add('offcanvas-header');
+        body_header.classList.add('offcanvas-header', 'border-bottom');
 
         let header_title = document.createElement('b')
         header_title.classList.add('navbar-brand');

@@ -76,8 +76,10 @@ npm run bundle:production
 **FE**
 
 Web Components  
-Bootstrap 5 (add shard ui)  
+Bootstrap 5
 Webpack  
+SASS  
+
 
 
 **BE**

@@ -19,6 +19,8 @@
     outline: none;
     border-color: transparent !important;
     box-shadow: transparent;
+    padding: .25rem .75rem;
+    padding-right: 0px !important;
     &:focus {
         box-shadow: none !important;
 

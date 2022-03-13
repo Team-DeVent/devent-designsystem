@@ -4,6 +4,8 @@
 @import 'foundation/variable';
 
 
+
+
 .btn{
   border-radius: $border-radius;
   border-color: transparent;
@@ -13,6 +15,10 @@
   font-weight: 400 !important;
   font-size: .875rem;
   line-height: 1.325;
+
+  &:hover, &:focus, &:active, &:visited {
+    box-shadow: none !important;
+  }
 }
 
 

@@ -3,7 +3,17 @@
 @import 'foundation/color';
 @import 'foundation/variable';
 
-
+@mixin buttons($color-100, $color-200, $color-300) {
+  background-color: $color-100;
+  color: $color-300;
+  &:hover, &:focus, &:active, &:visited {
+    background-color: $color-200 !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: $color-300 !important;
+  }
+  @content;
+}
 
 
 .btn{
@@ -23,67 +33,49 @@
 
 
 .btn-blue {
-  background-color: $blue-100;
-  color: $blue-300;
-  &:hover, &:focus, &:active, &:visited {
-    background-color: $blue-200 !important;
-    border-color: transparent !important;
-    box-shadow: none !important;
-    color: $blue-300 !important;
-  }
+  @include buttons(
+    $color-100: $blue-100, 
+    $color-200: $blue-200,
+    $color-300: $blue-300
+  ) {}
 }
 
 .btn-light {
-  background-color: $light-100;
-  color: $dark;
-  &:hover, &:focus, &:active, &:visited {
-    background-color: $light-200 !important;
-    border-color: transparent !important;
-    box-shadow: none !important;
-    color: $dark !important;
-  }
+  @include buttons(
+    $color-100: $light-100, 
+    $color-200: $light-200,
+    $color-300: $dark
+  ) {}
 }
 
 .btn-dark {
-  background-color: $dark;
-  color: $light-100;
-  &:hover, &:focus, &:active, &:visited {
-    background-color: $dark !important;
-    border-color: transparent !important;
-    box-shadow: none !important;
-    color: $light-100 !important;
-  }
+  @include buttons(
+    $color-100: $dark, 
+    $color-200: $dark,
+    $color-300: $light-100
+  ) {}
 }
 
 .btn-green {
-  background-color: $green-100;
-  color: $green-300;
-  &:hover, &:focus, &:active, &:visited {
-    background-color: $green-200 !important;
-    border-color: transparent !important;
-    box-shadow: none !important;
-    color: $green-300 !important;
-  }
+  @include buttons(
+    $color-100: $green-100, 
+    $color-200: $green-200,
+    $color-300: $green-300
+  ) {}
 }
 
 .btn-red {
-  background-color: $red-100;
-  color: $red-300;
-  &:hover, &:focus, &:active, &:visited {
-    background-color: $red-200 !important;
-    border-color: transparent !important;
-    box-shadow: none !important;
-    color: $red-300 !important;
-  }
+  @include buttons(
+    $color-100: $red-100, 
+    $color-200: $red-200,
+    $color-300: $red-300
+  ) {}
 }
 
 .btn-yellow {
-  background-color: $yellow-100;
-  color: $yellow-300;
-  &:hover, &:focus, &:active, &:visited {
-    background-color: $yellow-200 !important;
-    border-color: transparent !important;
-    box-shadow: none !important;
-    color: $yellow-300 !important;
-  }
+  @include buttons(
+    $color-100: $yellow-100, 
+    $color-200: $yellow-200,
+    $color-300: $yellow-300
+  ) {}
 }

@@ -76,10 +76,9 @@ npm run bundle:production
 **FE**
 
 Web Components  
-Bootstrap 5
+Bootstrap 5  
 Webpack  
 SASS  
-
 
 
 **BE**

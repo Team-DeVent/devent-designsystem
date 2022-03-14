@@ -69,18 +69,18 @@ class Navbar extends HTMLElement {
 
 class NavbarItem extends HTMLElement { 
     connectedCallback() {
-        let title = this.getAttribute('item-title')
+        let content = this.innerHTML
         let link = this.getAttribute('item-link')
         
         let body_list = document.querySelector("#navbar_collapse")
         let item_li = document.createElement('li')
         let item_link = document.createElement('a')
 
-        item_li.classList.add('navbar-item');
-        item_link.classList.add('nav-link', 'font-weight-sm')
+        item_li.classList.add('navbar-item', 'px-2');
+        item_link.classList.add('font-link', 'font-weight-sm')
         item_link.setAttribute('aria-current', 'page')
         item_link.setAttribute('href', link)
-        item_link.innerText = title
+        item_link.innerHTML = content
 
         item_li.appendChild(item_link)
         body_list.appendChild(item_li)

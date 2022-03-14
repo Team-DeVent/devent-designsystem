@@ -3,16 +3,14 @@
     {{> head}}
   <body>
     <dds-navbar nav-title="DDS">
-        <dds-navbar-item item-title="소개" item-link="/intro"></dds-navbar-item>
+        <dds-navbar-item item-link="/intro">소개</dds-navbar-item>
     </dds-navbar>
 
 
 
     <dds-header 
         header-title="디자인, 경계를 넘어"
-        header-sub-title="데벤트의 디자인 시스템은 디자인의 경계를 뛰어넘는 우아함을 선사합니다. 그야말로 경이로움에 가까운 전율을 느낄 수 있죠."
-        button-link="/"
-        button-title="보러가기">
+        header-sub-title="데벤트의 디자인 시스템은 디자인의 경계를 뛰어넘는 우아함을 선사합니다. 그야말로 경이로움에 가까운 전율을 느낄 수 있죠.">
         
         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
             <button class="btn btn-blue font-weight-sm px-4 py-3 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -104,7 +102,25 @@
                             <code data-language="html">
 &lt;dds-header 
     header-title=&quot;디자인, 경계를 넘어&quot;
-    header-sub-title=&quot;데벤트의 디자인 시스템은 디자인의 경계를 뛰어넘는 우아함을 선사합니다. 그야말로 경이로움에 가까운 전율을 느낄 수 있죠.&quot;
+    header-sub-title=&quot;데벤트의 디자인 시스템은 디자인의 경계를 뛰어넘는 우아함을 선사합니다. 그야말로 경이로움에 가까운 전율을 느낄 수 있죠.&quot;&gt;
+&lt;/dds-header&gt;</code>
+                        </pre>
+
+
+                    <h2 class="h4 font-title fw-bolder font-weight-md mt-2">버튼이 포함된 헤더 </h2>
+                        <p class="font-weight-sm mb-4">
+                            헤더에 버튼이 빠질 수 없죠.
+                            버튼은 밋밋하지 않은 해더를 만들어주고 유저 사용성까지 챙겨주는 고마운 친구랍니다.
+                        </p>
+
+                        <pre class="mt-4">
+                            <code data-language="html">
+&lt;dds-header 
+    header-title=&quot;디자인, 경계를 넘어&quot;
+    header-sub-title=&quot;데벤트의 디자인 시스템은 디자인의 경계를 뛰어넘는 우아함을 선사합니다. 그야말로 경이로움에 가까운 전율을 느낄 수 있죠.&quot;&gt;
+    &lt;div class=&quot;d-grid gap-3 d-sm-flex justify-content-sm-center&quot;&gt;
+        &lt;button&gt;yes!&lt;/button&gt;
+    &lt;/div&gt;
 &lt;/dds-header&gt;</code>
                         </pre>
                     </div>
@@ -120,7 +136,21 @@
                         <pre class="mt-4">
                             <code data-language="html">
 &lt;dds-navbar nav-title=&quot;DDS&quot;&gt;
-    &lt;dds-navbar-item item-title=&quot;소개&quot; item-link=&quot;/intro&quot;&gt;&lt;/dds-navbar-item&gt;
+    &lt;dds-navbar-item item-link=&quot;/intro&quot;&gt;소개&lt;/dds-navbar-item&gt;
+&lt;/dds-navbar&gt;</code>
+                        </pre>
+
+                    <h2 class="h4 font-title fw-bolder font-weight-md mt-2">아이콘이 포함된 네비게이션 바 </h2>
+                        <p class="font-weight-sm mb-4">
+                            <a href="https://fontawesome.com/v5/icons/android?s=brands" target="_blank" rel="noopener noreferrer">FontAwesome 5 </a>의 아이콘을 지원해요.
+                            이 뿐만 아니라 여러가지 HTML 콘텐츠들도 추가할 수 있죠.
+                        </p>
+
+                        <pre class="mt-4">
+                            <code data-language="html">
+&lt;dds-navbar nav-title=&quot;DDS Icon&quot;&gt;
+    &lt;dds-navbar-item item-link=&quot;/intro&quot;&gt;소개&lt;/dds-navbar-item&gt;
+    &lt;dds-navbar-item item-link=&quot;/icon&quot;&gt;&lt;i class=&quot;fab fa-android&quot;&gt;&lt;/i&gt;&lt;/dds-navbar-item&gt;
 &lt;/dds-navbar&gt;</code>
                         </pre>
                     </div>

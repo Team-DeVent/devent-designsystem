@@ -35,9 +35,11 @@
 
                         <button class="nav-link btn active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="hideSidebar()">Home</button>
                         <button class="nav-link btn" id="v-pills-header-tab" data-bs-toggle="pill" data-bs-target="#v-pills-header" type="button" role="tab" aria-controls="v-pills-header" aria-selected="false" onclick="hideSidebar()">Header</button>
+                        <button class="nav-link btn" id="v-pills-footer-tab" data-bs-toggle="pill" data-bs-target="#v-pills-footer" type="button" role="tab" aria-controls="v-pills-footer" aria-selected="false" onclick="hideSidebar()">Footer</button>
+
                         <button class="nav-link btn" id="v-pills-navbar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-navbar" type="button" role="tab" aria-controls="v-pills-navbar" aria-selected="false" onclick="hideSidebar()">Navbar</button>
                         <button class="nav-link btn" id="v-pills-sidebar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sidebar" type="button" role="tab" aria-controls="v-pills-sidebar" aria-selected="false" onclick="hideSidebar()">Sidebar</button>
-
+                        
                         <button class="nav-link btn" id="v-pills-button-tab" data-bs-toggle="pill" data-bs-target="#v-pills-button" type="button" role="tab" aria-controls="v-pills-button" aria-selected="false" onclick="hideSidebar()">Button</button>
                         <button class="nav-link btn" id="v-pills-modal-tab" data-bs-toggle="pill" data-bs-target="#v-pills-modal" type="button" role="tab" aria-controls="v-pills-modal" aria-selected="false" onclick="hideSidebar()">Modal</button>
                         <button class="nav-link btn" id="v-pills-form-tab" data-bs-toggle="pill" data-bs-target="#v-pills-form" type="button" role="tab" aria-controls="v-pills-form" aria-selected="false" onclick="hideSidebar()">Form</button>
@@ -122,6 +124,30 @@
         &lt;button&gt;yes!&lt;/button&gt;
     &lt;/div&gt;
 &lt;/dds-header&gt;</code>
+                        </pre>
+                    </div>
+
+
+                    
+
+
+                    <div class="tab-pane fade" id="v-pills-footer" role="tabpanel" aria-labelledby="v-pills-footer-tab">
+                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">하단 푸터 </h2>
+                        <p class="font-weight-sm mb-4">
+                            푸터는 하단의 사이트의 정보를 표기하는 공간이에요.
+                            푸터를 꾸미는건 사이트의 정보를 확고하게 하는 것.
+                            밋밋한 푸터가 되지 않도록 신경을 좀 써봤어요.
+                        </p>
+
+                        <pre class="mt-4">
+                            <code data-language="html">
+&lt;dds-footer
+    project-title=&quot;DeVent Design System&quot;
+    sub-title=&quot;데벤트&quot;
+    company-name=&quot;사업자등록번호 : 429-52-00535 | 대표: 허형준&quot;
+    project-email=&quot;문의: info@devent.kr&quot;&gt;
+&lt;/dds-footer&gt;
+</code>
                         </pre>
                     </div>
 
@@ -263,6 +289,8 @@
 
         </div>
     </section>
+
+
 
     
 

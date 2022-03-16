@@ -1,0 +1,15 @@
+@import 'foundation/color';
+@import 'foundation/variable';
+
+
+
+.toast {
+    border-radius: $border-radius;
+    margin-bottom: 7px !important;
+}
+
+.toast-header {
+    border-bottom: none !important;
+    border-radius: $border-radius;
+
+}

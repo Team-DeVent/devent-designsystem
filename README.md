@@ -94,7 +94,7 @@ Express
 * [x] navbar
 * [x] header
 * [x] modal
-* [ ] alert
+* [x] alert(popup)
 * [x] footer
 * [x] sidebar
 * [ ] tab

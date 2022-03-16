@@ -31,19 +31,21 @@
                     sidebar-title="사이드바"
                     sidebar-id="offcanvasExample">
 
-                    <div class="nav flex-column me-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-                        <button class="nav-link btn active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="hideSidebar()">Home</button>
-                        <button class="nav-link btn" id="v-pills-header-tab" data-bs-toggle="pill" data-bs-target="#v-pills-header" type="button" role="tab" aria-controls="v-pills-header" aria-selected="false" onclick="hideSidebar()">Header</button>
-                        <button class="nav-link btn" id="v-pills-footer-tab" data-bs-toggle="pill" data-bs-target="#v-pills-footer" type="button" role="tab" aria-controls="v-pills-footer" aria-selected="false" onclick="hideSidebar()">Footer</button>
+                    <dds-navtab>
+                        <dds-navtab-item item-id="home" is-selected="true"></dds-navtab-item>
 
-                        <button class="nav-link btn" id="v-pills-navbar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-navbar" type="button" role="tab" aria-controls="v-pills-navbar" aria-selected="false" onclick="hideSidebar()">Navbar</button>
-                        <button class="nav-link btn" id="v-pills-sidebar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sidebar" type="button" role="tab" aria-controls="v-pills-sidebar" aria-selected="false" onclick="hideSidebar()">Sidebar</button>
-                        
-                        <button class="nav-link btn" id="v-pills-button-tab" data-bs-toggle="pill" data-bs-target="#v-pills-button" type="button" role="tab" aria-controls="v-pills-button" aria-selected="false" onclick="hideSidebar()">Button</button>
-                        <button class="nav-link btn" id="v-pills-modal-tab" data-bs-toggle="pill" data-bs-target="#v-pills-modal" type="button" role="tab" aria-controls="v-pills-modal" aria-selected="false" onclick="hideSidebar()">Modal</button>
-                        <button class="nav-link btn" id="v-pills-form-tab" data-bs-toggle="pill" data-bs-target="#v-pills-form" type="button" role="tab" aria-controls="v-pills-form" aria-selected="false" onclick="hideSidebar()">Form</button>
-                    </div>
+                        <dds-navtab-item item-id="header" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="footer" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="navbar" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="sidebar" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="button" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="modal" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="form" is-selected="false"></dds-navtab-item>
+
+                    </dds-navtab>
+
+
                 </dds-sidebar>
 
 
@@ -291,13 +293,25 @@
     </section>
 
 
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <dds-popup
+            popup-title="테스트 팝업"
+            popup-id="myToastEl">
 
-    
+            안녕하세요 <b class="text-danger">반가워요.</b> 테스트 팝업이에요.
+
+        </dds-popup>
+
+    </div>
 
 
     {{> footer}}
 
     <script>
+
+
+
+
         var myOffcanvas = document.getElementById('offcanvasExample')
         var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
 

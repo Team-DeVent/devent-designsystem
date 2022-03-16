@@ -87,7 +87,45 @@ class NavbarItem extends HTMLElement {
     }
 }
 
-export { Navbar, NavbarItem }
+class Navtab extends HTMLElement { 
+    connectedCallback() {
+        this.classList.add('nav', 'flex-column', 'me-0');
+        this.setAttribute('id', 'v-pills-tab')
+        this.setAttribute('role', 'tablist')
+        this.setAttribute('aria-orientation', 'vertical')
+
+    }
+}
+
+class NavtabItem extends HTMLElement { 
+    connectedCallback() {
+        this.innerHTML = ''
+        let id = this.getAttribute('item-id')
+        let selected = this.getAttribute('is-selected')
+
+        console.log(id)
+
+        
+        let item = document.createElement('button')
+        item.classList.add('nav-link', 'nav-tab', 'btn');
+        item.setAttribute('id', `v-pills-${id}-tab`)
+        item.setAttribute('data-bs-toggle', 'pill')
+        item.setAttribute('data-bs-target', `#v-pills-${id}`)
+        item.setAttribute('type', 'button')
+        item.setAttribute('role', 'tab')
+        item.setAttribute('aria-controls', `v-pills-${id}`)
+        item.setAttribute('aria-selected', selected)
+        item.setAttribute('onclick', 'hideSidebar()')
+        item.innerText = id
+
+        
+
+        this.appendChild(item)
+    }
+}
+
+
+export { Navbar, NavbarItem, Navtab, NavtabItem }
 
 
 

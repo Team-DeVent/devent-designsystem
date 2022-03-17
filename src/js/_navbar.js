@@ -98,16 +98,31 @@ class Navtab extends HTMLElement {
 }
 
 class NavtabItem extends HTMLElement { 
+    constructor() {
+        super()
+
+        this.addEventListener('click', e => {
+            this.hideSidebar()
+        });
+    }
+
+    hideSidebar() {
+        var myOffcanvas = document.getElementById('offcanvasExample')
+        var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
+        bsOffcanvas.toggle()
+        bsOffcanvas.toggle()
+        bsOffcanvas.hide()
+        this.getElementsByTagName('button')[0].classList.remove('active')
+        
+    }
+
     connectedCallback() {
         this.innerHTML = ''
         let id = this.getAttribute('item-id')
         let selected = this.getAttribute('is-selected')
-
-        console.log(id)
-
         
         let item = document.createElement('button')
-        item.classList.add('nav-link', 'nav-tab', 'btn');
+        item.classList.add('nav-link', 'nav-tab', (selected == 'true' ? 'active' : 'btn'), 'btn');
         item.setAttribute('id', `v-pills-${id}-tab`)
         item.setAttribute('data-bs-toggle', 'pill')
         item.setAttribute('data-bs-target', `#v-pills-${id}`)
@@ -115,7 +130,6 @@ class NavtabItem extends HTMLElement {
         item.setAttribute('role', 'tab')
         item.setAttribute('aria-controls', `v-pills-${id}`)
         item.setAttribute('aria-selected', selected)
-        item.setAttribute('onclick', 'hideSidebar()')
         item.innerText = id
 
         

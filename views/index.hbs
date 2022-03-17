@@ -33,7 +33,7 @@
 
 
                     <dds-navtab>
-                        <dds-navtab-item item-id="home" is-selected="true"></dds-navtab-item>
+                        <dds-navtab-item item-id="home" is-selected="false"></dds-navtab-item>
 
                         <dds-navtab-item item-id="header" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="footer" is-selected="false"></dds-navtab-item>
@@ -44,6 +44,7 @@
                         <dds-navtab-item item-id="form" is-selected="false"></dds-navtab-item>
 
                     </dds-navtab>
+
 
 
                 </dds-sidebar>
@@ -180,6 +181,25 @@
     &lt;dds-navbar-item item-link=&quot;/intro&quot;&gt;소개&lt;/dds-navbar-item&gt;
     &lt;dds-navbar-item item-link=&quot;/icon&quot;&gt;&lt;i class=&quot;fab fa-android&quot;&gt;&lt;/i&gt;&lt;/dds-navbar-item&gt;
 &lt;/dds-navbar&gt;</code>
+                        </pre>
+
+
+                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">탭 네비게이션 바 </h2>
+                        <p class="font-weight-sm mb-4">
+                            탭 네비게이션 바는 가로로된 네비게이션 바 입니다.
+                            
+                        </p>
+
+                        <pre class="mt-4">
+                            <code data-language="html">
+&lt;dds-navtab&gt;
+    &lt;dds-navtab-item item-id=&quot;home&quot; is-selected=&quot;false&quot;&gt;&lt;/dds-navtab-item&gt;
+&lt;/dds-navtab&gt;
+
+&lt;div class=&quot;col tab-content&quot; id=&quot;v-pills-tabContent&quot;&gt;
+    &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;v-pills-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-home-tab&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
                         </pre>
                     </div>
 

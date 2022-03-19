@@ -40,6 +40,8 @@
                         <dds-navtab-item item-id="navbar" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="sidebar" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="button" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="popup" is-selected="false"></dds-navtab-item>
+
                         <dds-navtab-item item-id="modal" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="form" is-selected="false"></dds-navtab-item>
 
@@ -251,6 +253,27 @@
 
                     </div>
 
+
+                    <div class="tab-pane fade" id="v-pills-popup" role="tabpanel" aria-labelledby="v-pills-popup-tab">
+                        <h2 class="h4 fw-bolder font-weight-md mt-2">팝업 </h2>
+                        <p class="font-weight-sm mb-4">
+                            하단 팝업 입니다. 부트스트랩 toast기능입니다.
+                        </p>
+
+
+<pre class="mt-4"><code data-language="html">&lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
+        &lt;dds-popup
+            popup-title=&quot;테스트 팝업&quot;
+            popup-id=&quot;myToastEl&quot;
+            popup-delay=&quot;5000&quot;
+            popup-autohide=&quot;false&quot;&gt;
+            안녕하세요 &lt;b class=&quot;text-danger&quot;&gt;반가워요.&lt;/b&gt; 테스트 팝업이에요. 
+
+        &lt;/dds-popup&gt;
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
                     <div class="tab-pane fade" id="v-pills-modal" role="tabpanel" aria-labelledby="v-pills-modal-tab">
                         <h2 class="h4 fw-bolder font-weight-md mt-2">모달</h2>
                         <p class="font-weight-sm mb-4">
@@ -316,7 +339,9 @@
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <dds-popup
             popup-title="테스트 팝업"
-            popup-id="myToastEl">
+            popup-id="myToastEl"
+            popup-delay="5000"
+            popup-autohide="false">
 
             안녕하세요 <b class="text-danger">반가워요.</b> 테스트 팝업이에요.
 

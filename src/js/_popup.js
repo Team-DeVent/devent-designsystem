@@ -3,6 +3,8 @@ class Popup extends HTMLElement {
         let innerbody = this.innerHTML
         let title = this.getAttribute('popup-title')
         let id = this.getAttribute('popup-id')
+        let delay = this.getAttribute('popup-delay')
+        let autohide = this.getAttribute('popup-autohide')
 
 
         let body = document.createElement('div')
@@ -10,8 +12,8 @@ class Popup extends HTMLElement {
         body.setAttribute('id', id)
         body.setAttribute('role', 'alert')
         body.setAttribute('data-bs-animation', 'true')
-        body.setAttribute('data-bs-autohide', 'true')
-        body.setAttribute('data-bs-delay', '5000')
+        body.setAttribute('data-bs-autohide', autohide)
+        body.setAttribute('data-bs-delay', delay)
         body.setAttribute('aria-live', 'assertive')
         body.setAttribute('aria-atomic', 'true')
 

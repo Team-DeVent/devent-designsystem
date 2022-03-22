@@ -7,8 +7,12 @@ class Navbar extends HTMLElement {
     }
 
     buttonToggle() {
-        let is_expanded = document.querySelector("#navbar_toggle_button").getAttribute("aria-expanded")
-        let icon = document.querySelector("#navbar_toggle_icon")
+        let button_body = this.querySelector('.navbar')
+        .querySelector('div')
+        .querySelector('button')
+        let is_expanded = button_body.getAttribute("aria-expanded")
+
+        let icon = button_body.querySelector("i")
 
         if (is_expanded == 'true') {
             icon.classList.add('fa-times')
@@ -20,7 +24,15 @@ class Navbar extends HTMLElement {
     }
 
     connectedCallback() {
+        let innerbody = this.innerHTML
+        this.innerHTML = ''
+
         let title = this.getAttribute('nav-title')
+        let fixed = this.getAttribute('nav-fixed')
+
+        let random_id = Math.floor(Math.random()*999999)
+        let toggle_button_id = `navbar_toggle_button_${random_id}`
+        let toggle_icon_id = `navbar_toggle_button_${random_id}`
 
         
         let body_nav = document.createElement('nav')
@@ -33,7 +45,7 @@ class Navbar extends HTMLElement {
         let button_icon = document.createElement('i')
 
 
-        body_nav.classList.add('navbar', 'navbar-expand-lg', 'navbar-light', 'navbar-blur', 'fixed-top');
+        body_nav.classList.add('navbar', 'navbar-expand-lg', 'navbar-light', 'navbar-blur', `fixed-${fixed}`);
         body_container.classList.add('container-fluid', 'px-4', 'py-2')
 
         a_title.classList.add('navbar-brand')
@@ -41,21 +53,21 @@ class Navbar extends HTMLElement {
         a_title.innerText = title
 
         button_toggle.classList.add('navbar-toggler')
-        button_toggle.setAttribute('id', 'navbar_toggle_button')
+        button_toggle.setAttribute('id', toggle_button_id)
         button_toggle.setAttribute('type', 'button')
         button_toggle.setAttribute('data-bs-toggle', 'collapse')
-        button_toggle.setAttribute('data-bs-target', '#navbar_supported_content')
-        button_toggle.setAttribute('aria-controls', 'navbar_supported_content')
+        button_toggle.setAttribute('data-bs-target', `#navbar_supported_content_${random_id}`)
+        button_toggle.setAttribute('aria-controls', `navbar_supported_content_${random_id}`)
         button_toggle.setAttribute('aria-expanded', 'false')
 
         button_icon.classList.add('fas', 'fa-bars')
-        button_icon.setAttribute('id', 'navbar_toggle_icon')
+        button_icon.setAttribute('id', toggle_icon_id)
 
         body_collapse.classList.add('collapse', 'navbar-collapse')
-        body_collapse.setAttribute('id', 'navbar_supported_content')
+        body_collapse.setAttribute('id', `navbar_supported_content_${random_id}`)
         collapse_list.classList.add('navbar-nav', 'ms-auto', 'mb-2', 'mb-lg-0')
-        collapse_list.setAttribute('id', 'navbar_collapse')
-
+        collapse_list.setAttribute('id', `navbar_collapse_${random_id}`)
+        collapse_list.innerHTML = innerbody
 
         button_toggle.appendChild(button_icon)
         body_container.appendChild(a_title)
@@ -64,6 +76,7 @@ class Navbar extends HTMLElement {
         body_collapse.appendChild(collapse_list) 
         body_nav.appendChild(body_container)
         this.appendChild(body_nav)
+
     }
 }
 
@@ -72,7 +85,6 @@ class NavbarItem extends HTMLElement {
         let content = this.innerHTML
         let link = this.getAttribute('item-link')
         
-        let body_list = document.querySelector("#navbar_collapse")
         let item_li = document.createElement('li')
         let item_link = document.createElement('a')
 
@@ -81,9 +93,12 @@ class NavbarItem extends HTMLElement {
         item_link.setAttribute('aria-current', 'page')
         item_link.setAttribute('href', link)
         item_link.innerHTML = content
+        this.innerHTML = ''
+
 
         item_li.appendChild(item_link)
-        body_list.appendChild(item_li)
+        this.appendChild(item_li)
+        
     }
 }
 
@@ -133,8 +148,8 @@ class NavtabItem extends HTMLElement {
         item.innerText = id
 
         
-
         this.appendChild(item)
+        
     }
 }
 

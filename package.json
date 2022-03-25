@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "deventds",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "DeVent Design System, bootstrap based design system for a sense of unity.",
   "homepage": "https://github.com/Team-DeVent/devent-designsystem",
   "browser": "dist/main.js",

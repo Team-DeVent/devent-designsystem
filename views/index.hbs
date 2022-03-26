@@ -34,6 +34,8 @@
                         <dds-navtab-item item-id="home" is-selected="false"></dds-navtab-item>
 
                         <dds-navtab-item item-id="header" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="color" is-selected="false"></dds-navtab-item>
+
                         <dds-navtab-item item-id="footer" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="navbar" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="sidebar" is-selected="false"></dds-navtab-item>
@@ -52,6 +54,10 @@
 {{> pages/components/home}}
                     </div>
 
+                    <div class="tab-pane fade" id="v-pills-color" role="tabpanel" aria-labelledby="v-pills-color-tab">
+{{> pages/components/color}}
+                    </div>
+
                     <div class="tab-pane fade" id="v-pills-header" role="tabpanel" aria-labelledby="v-pills-header-tab">
 {{> pages/components/header}}
                     </div>
@@ -63,6 +69,7 @@
                     <div class="tab-pane fade" id="v-pills-navbar" role="tabpanel" aria-labelledby="v-pills-navbar-tab">
 {{> pages/components/navbar}}
                     </div>
+                    
 
                     <div class="tab-pane fade" id="v-pills-sidebar" role="tabpanel" aria-labelledby="v-pills-sidebar-tab">
 {{> pages/components/sidebar}}
@@ -80,6 +87,8 @@
                     <div class="tab-pane fade" id="v-pills-modal" role="tabpanel" aria-labelledby="v-pills-modal-tab">
 {{> pages/components/modal}}
                     </div>
+
+
 
                     <div class="tab-pane fade" id="v-pills-form" role="tabpanel" aria-labelledby="v-pills-form-tab">
 {{> pages/components/input}}

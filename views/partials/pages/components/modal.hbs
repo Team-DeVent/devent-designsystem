@@ -1,0 +1,32 @@
+<h2 class="h4 fw-bolder font-weight-md mt-2">모달</h2>
+<p class="font-weight-sm mb-4">
+    부트스트랩 5와 데벤트 디자인 시스템이 만나 더 새로워지고 강력해진 모달로 돌아왔어요. 
+    div의 늪에서 빠져나올 준비, 되셨나요?
+</p>
+
+<button type="button" class="btn btn-blue mt-2" data-bs-toggle="modal" data-bs-target="#aaa">
+Launch demo modal
+</button>
+
+<dds-modal
+modal-id="aaa"
+modal-title="테스트 모달이에요."
+modal-subtitle="명품 프로덕트의 시작은 언제나 모달이죠.">
+    <dds-modal-button button-color="btn-blue" button-text-color="text-primary" is-dismiss="false">저장</dds-modal-button>
+    <dds-modal-button button-color="btn-light" button-text-color="text-dark" is-dismiss="true">취소</dds-modal-button>
+</dds-modal>
+
+                        
+<pre class="mt-4"><code data-language="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary mt-2&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#aaa&quot;&gt;
+    Launch demo modal
+&lt;/button&gt;
+
+&lt;dds-modal
+    modal-id=&quot;aaa&quot;
+    modal-title=&quot;테스트 모달이에요.&quot;
+    modal-subtitle=&quot;명품 프로덕트의 시작은 언제나 모달이죠.&quot;&gt;
+        &lt;dds-modal-button button-color=&quot;btn-blue&quot; button-text-color=&quot;text-primary&quot; is-dismiss=&quot;false&quot;&gt;저장&lt;/dds-modal-button&gt;
+        &lt;dds-modal-button button-color=&quot;btn-light&quot; button-text-color=&quot;text-dark&quot; is-dismiss=&quot;true&quot;&gt;취소&lt;/dds-modal-button&gt;
+&lt;/dds-modal&gt;
+</code></pre>

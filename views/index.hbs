@@ -26,11 +26,9 @@
         <div class="container-fluid px-4 my-5">
             <div class="row d-flex align-items-start">
 
-
                 <dds-sidebar 
                     sidebar-title="사이드바"
                     sidebar-id="offcanvasExample">
-
 
                     <dds-navtab>
                         <dds-navtab-item item-id="home" is-selected="false"></dds-navtab-item>
@@ -46,352 +44,48 @@
                         <dds-navtab-item item-id="form" is-selected="false"></dds-navtab-item>
 
                     </dds-navtab>
-
-
-
                 </dds-sidebar>
 
 
                 <div class="col tab-content" id="v-pills-tabContent">
-
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">한 마음, 한 뜻으로</h2>
-                        <p class="font-weight-sm mb-4">
-                            데벤트 디자인 시스템은 모든 서비스의 일관성을 지향헤요.
-                            동시에 각 서비스만의 개성을 강조하며 전체를 커버할 수 있는 확장성 또한 고려해야합니다.
-                            이 같은 노력은 모두 데벤트의 효율적인 개발을 위해 존재하죠.
-                        </p>
-
-                        <h2 class="h4 font-title font-weight-md fw-bolder">우리만의 철학</h2>
-                        <p class="font-weight-sm mb-4">
-                            기술 윤리, 투명성, 지속적인 도전 <br>
-                            데벤트 디자인 시스템이 갖추어야 할 철학이에요.
-                        </p>
-
-                        <h2 class="h4 font-title font-weight-md fw-bolder">시작하기</h2>
-
-<pre class="mt-4"><code data-language="html">
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
-
-    &lt;!-- CSS Dependencies --&gt;
-    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt; 
-    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt; 
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot; integrity=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot; crossorigin=&quot;anonymous&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/themes/github.min.css&quot; integrity=&quot;sha512-dqCmbGxLwDqQYmI+Dr0LAWG21trYGnqIaw+yuyfmLXTmb8tiZyvOeqQqmJbZWv7UpzUeRV9Zj6QTKMw4eMSiHw==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot; /&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, world!&lt;/h1&gt;
-
-
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js&quot; integrity=&quot;sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js&quot; integrity=&quot;sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
+{{> pages/components/home}}
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-header" role="tabpanel" aria-labelledby="v-pills-header-tab">
-                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">헤더 </h2>
-                        <p class="font-weight-sm mb-4">
-                            헤더 디자인은 사용자가 처음으로 마주하는 중요한 페이지에요.
-                            불필요한 메시지는 제외하고 하나의 제목, 하나의 부제목, 하나의 버튼 원칙을 고수해야합니다.
-                            따라서 직관적인 메시지를 심플하게 보여주는게 디자인 시스템의 핵심이죠.
-                        </p>
-
-                        <pre>
-                            <dds-header 
-                                header-title="디자인, 경계를 넘어"
-                                header-sub-title="데벤트의 디자인 시스템은 디자인의 경계를 뛰어넘는 우아함을 선사합니다. 그야말로 경이로움에 가까운 전율을 느낄 수 있죠.">
-                                
-                            </dds-header>
-                        </pre>
-
-                        <pre class="mt-4">
-                            <code data-language="html">
-&lt;dds-header 
-    header-title=&quot;디자인, 경계를 넘어&quot;
-    header-sub-title=&quot;데벤트의 디자인 시스템은 디자인의 경계를 뛰어넘는 우아함을 선사합니다. 그야말로 경이로움에 가까운 전율을 느낄 수 있죠.&quot;&gt;
-&lt;/dds-header&gt;</code>
-                        </pre>
-
-
-                    <h2 class="h4 font-title fw-bolder font-weight-md mt-2">버튼이 포함된 헤더 </h2>
-                        <p class="font-weight-sm mb-4">
-                            헤더에 버튼이 빠질 수 없죠.
-                            버튼은 밋밋하지 않은 해더를 만들어주고 유저 사용성까지 챙겨주는 고마운 친구랍니다.
-                        </p>
-
-                        <pre>
-<dds-header 
-    header-title="디자인, 경계를 넘어"
-    header-sub-title="데벤트의 디자인 시스템은 디자인의 경계를 뛰어넘는 우아함을 선사합니다. 그야말로 경이로움에 가까운 전율을 느낄 수 있죠.">
-    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-        <button>yes!</button>
-    </div>
-</dds-header>
-                
-                        </pre>
-
-                        <pre class="mt-4">
-                            <code data-language="html">
-&lt;dds-header 
-    header-title=&quot;디자인, 경계를 넘어&quot;
-    header-sub-title=&quot;데벤트의 디자인 시스템은 디자인의 경계를 뛰어넘는 우아함을 선사합니다. 그야말로 경이로움에 가까운 전율을 느낄 수 있죠.&quot;&gt;
-    &lt;div class=&quot;d-grid gap-3 d-sm-flex justify-content-sm-center&quot;&gt;
-        &lt;button&gt;yes!&lt;/button&gt;
-    &lt;/div&gt;
-&lt;/dds-header&gt;</code>
-                        </pre>
+{{> pages/components/header}}
                     </div>
 
-
-                    
-
-
                     <div class="tab-pane fade" id="v-pills-footer" role="tabpanel" aria-labelledby="v-pills-footer-tab">
-                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">하단 푸터 </h2>
-                        <p class="font-weight-sm mb-4">
-                            푸터는 하단의 사이트의 정보를 표기하는 공간이에요.
-                            푸터를 꾸미는건 사이트의 정보를 확고하게 하는 것.
-                            밋밋한 푸터가 되지 않도록 신경을 좀 써봤어요.
-                        </p>
-
-                        <pre>
-                            
-<dds-footer
-    project-title="DeVent Design System"
-    sub-title="데벤트"
-    company-name="사업자등록번호 : 429-52-00535 | 대표: 허형준"
-    project-email="문의: info@devent.kr">
-</dds-footer>
-                
-                        </pre>
-
-                        <pre class="mt-4">
-                            <code data-language="html">
-&lt;dds-footer
-    project-title=&quot;DeVent Design System&quot;
-    sub-title=&quot;데벤트&quot;
-    company-name=&quot;사업자등록번호 : 429-52-00535 | 대표: 허형준&quot;
-    project-email=&quot;문의: info@devent.kr&quot;&gt;
-&lt;/dds-footer&gt;
-</code>
-                        </pre>
+{{> pages/components/footer}}
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-navbar" role="tabpanel" aria-labelledby="v-pills-navbar-tab">
-                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">네비게이션 바 </h2>
-                        <p class="font-weight-sm mb-4">
-                            네비게이션 바는 사용자가 쉽게 페이지를 이동할 수 있도록 타이틀과 링크로 이루어져 있어요.
-                            타이틀 바에는 서비스의 이름만 적고, 나머지는 적을 수 없어요.
-                            링크에는 텍스트와 아이콘 중 하나를 선택하여 통일시켜야 해요.
-
-                            <b>nav-fixed를 사용하면 none, top(상단), bottom(하단)에 고정시킬 수 있어요.</b>
-                        </p>
-
-                        <pre >
-
-                            <dds-navbar nav-title="DDS" nav-fixed="none">
-                                <dds-navbar-item item-link="/intro">소개</dds-navbar-item>
-                            </dds-navbar>
-                        </pre>
-
-                        <pre class="mt-4">
-                            <code data-language="html">
-&lt;dds-navbar nav-title=&quot;DDS&quot; nav-fixed=&quot;none&quot;&gt;
-    &lt;dds-navbar-item item-link=&quot;/intro&quot;&gt;소개&lt;/dds-navbar-item&gt;
-&lt;/dds-navbar&gt;</code>
-                        </pre>
-
-                    <h2 class="h4 font-title fw-bolder font-weight-md mt-2">아이콘이 포함된 네비게이션 바 </h2>
-                        <p class="font-weight-sm mb-4">
-                            <a href="https://fontawesome.com/v5/icons/android?s=brands" target="_blank" rel="noopener noreferrer">FontAwesome 5 </a>의 아이콘을 지원해요.
-                            이 뿐만 아니라 여러가지 HTML 콘텐츠들도 추가할 수 있죠.
-                        </p>
-
-                        <pre>
-
-                            <dds-navbar nav-title="DDS Icon" nav-fixed="none">
-                                <dds-navbar-item item-link="/intro">소개</dds-navbar-item>
-                                <dds-navbar-item item-link="/icon"><i class="fab fa-android"></i></dds-navbar-item>
-                            </dds-navbar>
-                        </pre>
-
-                        <pre class="mt-4">
-                            <code data-language="html">
-&lt;dds-navbar nav-title=&quot;DDS Icon&quot; nav-fixed=&quot;none&quot;&gt;
-    &lt;dds-navbar-item item-link=&quot;/intro&quot;&gt;소개&lt;/dds-navbar-item&gt;
-    &lt;dds-navbar-item item-link=&quot;/icon&quot;&gt;&lt;i class=&quot;fab fa-android&quot;&gt;&lt;/i&gt;&lt;/dds-navbar-item&gt;
-&lt;/dds-navbar&gt;</code>
-                        </pre>
-
-
-                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">탭 네비게이션 바 </h2>
-                        <p class="font-weight-sm mb-4">
-                            탭 네비게이션 바는 가로로된 네비게이션 바 입니다.
-                            
-                        </p>
-
-                        <pre class="mt-4">
-                            <code data-language="html">
-&lt;dds-navtab&gt;
-    &lt;dds-navtab-item item-id=&quot;home&quot; is-selected=&quot;false&quot;&gt;&lt;/dds-navtab-item&gt;
-&lt;/dds-navtab&gt;
-
-&lt;div class=&quot;col tab-content&quot; id=&quot;v-pills-tabContent&quot;&gt;
-    &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;v-pills-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-home-tab&quot;&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code>
-                        </pre>
+{{> pages/components/navbar}}
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-sidebar" role="tabpanel" aria-labelledby="v-pills-sidebar-tab">
-                        <h2 class="h4 font-title fw-bolder font-weight-md mt-2">사이드 바 </h2>
-                        <p class="font-weight-sm mb-4">
-                            사이드바는 부트스트랩5 에서의 offcanvas 기능이에요.
-                            메뉴나 콘텐츠, 핸들링이 필요하다면 사이드바를 이용하면 됩니다.
-                        </p>
-
-                        <pre class="mt-4">
-                            <code data-language="html">
-&lt;button class=&quot;btn btn-blue font-weight-sm px-4 py-3 mt-2&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#offcanvasExample&quot; aria-controls=&quot;offcanvasExample&quot;&gt;
-    사이드바 열기
-&lt;/button&gt;
-
-&lt;dds-sidebar 
-    sidebar-title=&quot;사이드바&quot;
-    sidebar-id=&quot;offcanvasExample&quot;&gt;
-
-
-&lt;/dds-sidebar&gt;
-</code>
-                        </pre>
+{{> pages/components/sidebar}}
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-button" role="tabpanel" aria-labelledby="v-pills-button-tab">
-                        <h2 class="h4 fw-bolder font-weight-md mt-2">버튼 </h2>
-                        <p class="font-weight-sm mb-4">
-                            라이트 테마에서의 버튼 디자인은 파스텔톤 위주의 컬러를 권고합니다.
-                            색상은 primary(blue), success(green), light(white), dark(black) 을 지원합니다. 
-                        </p>
-
-
-                    <button class="btn btn-blue">Blue</button>
-                    <button class="btn btn-green">Green</button>
-                    <button class="btn btn-red">Red</button>
-                    <button class="btn btn-yellow">Yellow</button>
-                    <button class="btn btn-light">Light</button>
-                    <button class="btn btn-dark">Dark</button>
-
-<pre class="mt-4"><code data-language="html">
-<button class="btn btn-blue">Blue</button>
-<button class="btn btn-green">Green</button>
-<button class="btn btn-red">Red</button>
-<button class="btn btn-yellow">Yellow</button>
-<button class="btn btn-light" >Light</button>
-<button class="btn btn-dark">Dark</button></code></pre>
-
+{{> pages/components/button}}
                     </div>
 
 
                     <div class="tab-pane fade" id="v-pills-popup" role="tabpanel" aria-labelledby="v-pills-popup-tab">
-                        <h2 class="h4 fw-bolder font-weight-md mt-2">팝업 </h2>
-                        <p class="font-weight-sm mb-4">
-                            하단 팝업 입니다. 부트스트랩 toast기능입니다.
-                        </p>
-
-                        <pre>
-                            <div class="toast-container ">
-                            <dds-popup
-                                popup-title="테스트 팝업"
-                                popup-id="myToastEl2"
-                                popup-delay="5000"
-                                popup-autohide="false">안녕하세요. <b class="text-danger">반가워요.</b> 테스트 팝업이에요.
-                            </dds-popup>
-                            </div>
-
-
-                        </pre>
-
-
-<pre class="mt-4"><code data-language="html">&lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
-        &lt;dds-popup
-            popup-title=&quot;테스트 팝업&quot;
-            popup-id=&quot;myToastEl&quot;
-            popup-delay=&quot;5000&quot;
-            popup-autohide=&quot;false&quot;&gt;
-            안녕하세요 &lt;b class=&quot;text-danger&quot;&gt;반가워요.&lt;/b&gt; 테스트 팝업이에요. 
-
-        &lt;/dds-popup&gt;
-&lt;/div&gt;</code></pre>
-
+{{> pages/components/popup}}
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-modal" role="tabpanel" aria-labelledby="v-pills-modal-tab">
-                        <h2 class="h4 fw-bolder font-weight-md mt-2">모달</h2>
-                        <p class="font-weight-sm mb-4">
-                            부트스트랩 5와 데벤트 디자인 시스템이 만나 더 새로워지고 강력해진 모달로 돌아왔어요. 
-                            div의 늪에서 빠져나올 준비, 되셨나요?
-                        </p>
-
-                        <button type="button" class="btn btn-blue mt-2" data-bs-toggle="modal" data-bs-target="#aaa">
-                        Launch demo modal
-                        </button>
-
-                        <dds-modal
-                        modal-id="aaa"
-                        modal-title="테스트 모달이에요."
-                        modal-subtitle="명품 프로덕트의 시작은 언제나 모달이죠.">
-                            <dds-modal-button button-color="btn-blue" button-text-color="text-primary" is-dismiss="false">저장</dds-modal-button>
-                            <dds-modal-button button-color="btn-light" button-text-color="text-dark" is-dismiss="true">취소</dds-modal-button>
-                        </dds-modal>
-
-
-
-                        
-<pre class="mt-4"><code data-language="html">
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary mt-2&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#aaa&quot;&gt;
-    Launch demo modal
-&lt;/button&gt;
-
-&lt;dds-modal
-    modal-id=&quot;aaa&quot;
-    modal-title=&quot;테스트 모달이에요.&quot;
-    modal-subtitle=&quot;명품 프로덕트의 시작은 언제나 모달이죠.&quot;&gt;
-        &lt;dds-modal-button button-color=&quot;btn-blue&quot; button-text-color=&quot;text-primary&quot; is-dismiss=&quot;false&quot;&gt;저장&lt;/dds-modal-button&gt;
-        &lt;dds-modal-button button-color=&quot;btn-light&quot; button-text-color=&quot;text-dark&quot; is-dismiss=&quot;true&quot;&gt;취소&lt;/dds-modal-button&gt;
-&lt;/dds-modal&gt;
-</code></pre>
-
+{{> pages/components/modal}}
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-form" role="tabpanel" aria-labelledby="v-pills-form-tab">
-                        
-                        <h2 class="h4 fw-bolder font-weight-md mt-2">텍스트입력 </h2>
-
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-
-                        <h2 class="h4 fw-bolder font-weight-md mt-2">입력 </h2>
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control"  placeholder="name@example.com">
-                        </div>
-
-
+{{> pages/components/input}}
                     </div>
-
                 </div>
             </div>
-
         </div>
     </section>
 

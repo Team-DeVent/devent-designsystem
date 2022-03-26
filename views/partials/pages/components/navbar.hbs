@@ -1,0 +1,63 @@
+<h2 class="h4 font-title fw-bolder font-weight-md mt-2">네비게이션 바 </h2>
+<p class="font-weight-sm mb-4">
+    네비게이션 바는 사용자가 쉽게 페이지를 이동할 수 있도록 타이틀과 링크로 이루어져 있어요.
+    타이틀 바에는 서비스의 이름만 적고, 나머지는 적을 수 없어요.
+    링크에는 텍스트와 아이콘 중 하나를 선택하여 통일시켜야 해요.
+
+    <b>nav-fixed를 사용하면 none, top(상단), bottom(하단)에 고정시킬 수 있어요.</b>
+</p>
+
+<pre>
+    <dds-navbar nav-title="DDS" nav-fixed="none">
+        <dds-navbar-item item-link="/intro">소개</dds-navbar-item>
+    </dds-navbar>
+</pre>
+
+<pre class="mt-4">
+    <code data-language="html">
+&lt;dds-navbar nav-title=&quot;DDS&quot; nav-fixed=&quot;none&quot;&gt;
+    &lt;dds-navbar-item item-link=&quot;/intro&quot;&gt;소개&lt;/dds-navbar-item&gt;
+&lt;/dds-navbar&gt;</code>
+</pre>
+
+
+
+<h2 class="h4 font-title fw-bolder font-weight-md mt-2">아이콘이 포함된 네비게이션 바 </h2>
+<p class="font-weight-sm mb-4">
+    <a href="https://fontawesome.com/v5/icons/android?s=brands" target="_blank" rel="noopener noreferrer">FontAwesome 5 </a>의 아이콘을 지원해요.
+    이 뿐만 아니라 여러가지 HTML 콘텐츠들도 추가할 수 있죠.
+</p>
+
+<pre>
+    <dds-navbar nav-title="DDS Icon" nav-fixed="none">
+        <dds-navbar-item item-link="/intro">소개</dds-navbar-item>
+        <dds-navbar-item item-link="/icon"><i class="fab fa-android"></i></dds-navbar-item>
+    </dds-navbar>
+</pre>
+
+<pre class="mt-4">
+    <code data-language="html">
+&lt;dds-navbar nav-title=&quot;DDS Icon&quot; nav-fixed=&quot;none&quot;&gt;
+    &lt;dds-navbar-item item-link=&quot;/intro&quot;&gt;소개&lt;/dds-navbar-item&gt;
+    &lt;dds-navbar-item item-link=&quot;/icon&quot;&gt;&lt;i class=&quot;fab fa-android&quot;&gt;&lt;/i&gt;&lt;/dds-navbar-item&gt;
+&lt;/dds-navbar&gt;</code>
+</pre>
+
+
+
+<h2 class="h4 font-title fw-bolder font-weight-md mt-2">탭 네비게이션 바 </h2>
+<p class="font-weight-sm mb-4">
+    탭 네비게이션 바는 가로로된 네비게이션 바 입니다.
+</p>
+
+<pre class="mt-4">
+    <code data-language="html">
+&lt;dds-navtab&gt;
+    &lt;dds-navtab-item item-id=&quot;home&quot; is-selected=&quot;false&quot;&gt;&lt;/dds-navtab-item&gt;
+&lt;/dds-navtab&gt;
+
+&lt;div class=&quot;col tab-content&quot; id=&quot;v-pills-tabContent&quot;&gt;
+    &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;v-pills-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-home-tab&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>

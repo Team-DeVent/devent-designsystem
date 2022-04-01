@@ -1,0 +1,72 @@
+<h2 class="h4 fw-bolder font-weight-md mt-2">모달</h2>
+<p class="font-weight-sm mb-4">
+    부트스트랩 5와 데벤트 디자인 시스템이 만나 더 새로워지고 강력해진 모달로 돌아왔어요. 
+    div의 늪에서 빠져나올 준비, 되셨나요?
+</p>
+
+<button type="button" class="btn btn-blue mt-2" data-bs-toggle="modal" data-bs-target="#aaa">
+Launch demo modal
+</button>
+
+<dds-modal
+modal-id="aaa"
+modal-title="테스트 모달이에요."
+modal-subtitle="명품 프로덕트의 시작은 언제나 모달이죠.">
+    <dds-modal-button button-color="btn-blue" button-text-color="text-primary" is-dismiss="false">저장</dds-modal-button>
+    <dds-modal-button button-color="btn-light" button-text-color="text-dark" is-dismiss="true">취소</dds-modal-button>
+</dds-modal>
+
+
+                        
+<pre class="mt-4"><code data-language="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary mt-2&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#aaa&quot;&gt;
+    Launch demo modal
+&lt;/button&gt;
+
+&lt;dds-modal
+    modal-id=&quot;aaa&quot;
+    modal-title=&quot;테스트 모달이에요.&quot;
+    modal-subtitle=&quot;명품 프로덕트의 시작은 언제나 모달이죠.&quot;&gt;
+        &lt;dds-modal-button button-color=&quot;btn-blue&quot; button-text-color=&quot;text-primary&quot; is-dismiss=&quot;false&quot;&gt;저장&lt;/dds-modal-button&gt;
+        &lt;dds-modal-button button-color=&quot;btn-light&quot; button-text-color=&quot;text-dark&quot; is-dismiss=&quot;true&quot;&gt;취소&lt;/dds-modal-button&gt;
+&lt;/dds-modal&gt;
+</code></pre>
+
+<br>
+<h2 class="h4 fw-bolder font-weight-md mt-2">콘텐츠가 있는 모달</h2>
+<p class="font-weight-sm mb-4">
+    모달의 사용성을 한껏 끌어올려줄 마스터피스!
+    지금 바로 구경해보세요.
+</p>
+
+<button type="button" class="btn btn-blue mt-2" data-bs-toggle="modal" data-bs-target="#bbb">
+Launch content modal
+</button>
+
+<dds-modal
+modal-id="bbb"
+modal-title="테스트 모달이에요."
+modal-subtitle="인풋태그 외에도 다양하게 추가할 수 있어요">
+    <dds-content>
+        <div class="mb-3">
+            <input type="text" class="form-control"  placeholder="name@example.com">
+        </div>
+    </dds-content>
+    <dds-modal-button button-color="btn-blue" button-text-color="text-primary" is-dismiss="false">저장</dds-modal-button>
+    <dds-modal-button button-color="btn-light" button-text-color="text-dark" is-dismiss="true">취소</dds-modal-button>
+</dds-modal>
+
+<pre class="mt-4"><code data-language="html">
+&lt;dds-modal
+modal-id=&quot;bbb&quot;
+modal-title=&quot;테스트 모달이에요.&quot;
+modal-subtitle=&quot;인풋태그 외에도 다양하게 추가할 수 있어요&quot;&gt;
+    &lt;dds-content&gt;
+        &lt;div class=&quot;mb-3&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;  placeholder=&quot;name@example.com&quot;&gt;
+        &lt;/div&gt;
+    &lt;/dds-content&gt;
+    &lt;dds-modal-button button-color=&quot;btn-blue&quot; button-text-color=&quot;text-primary&quot; is-dismiss=&quot;false&quot;&gt;저장&lt;/dds-modal-button&gt;
+    &lt;dds-modal-button button-color=&quot;btn-light&quot; button-text-color=&quot;text-dark&quot; is-dismiss=&quot;true&quot;&gt;취소&lt;/dds-modal-button&gt;
+&lt;/dds-modal&gt;
+</code></pre>

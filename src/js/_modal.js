@@ -1,6 +1,8 @@
 class Modal extends HTMLElement { 
     connectedCallback() {
         let button_elements = this.getElementsByTagName('dds-modal-button')
+        let inner_elements = this.getElementsByTagName('dds-content') 
+
 
         let modalid = this.getAttribute('modal-id')
         let modalmaintitle = this.getAttribute('modal-title')
@@ -11,6 +13,7 @@ class Modal extends HTMLElement {
         let modal_dialog = document.createElement('div')
         let modal_content = document.createElement('div')
         let modal_body = document.createElement('div')
+        let inner_content = document.createElement('div')
 
         let modal_main_title = document.createElement('h5')
         let modal_sub_title = document.createElement('p')
@@ -40,8 +43,13 @@ class Modal extends HTMLElement {
             button_group.appendChild(button_elements[index])
         }
 
+        for (let index = inner_elements.length-1; index > -1; index--) {
+            inner_content.appendChild(inner_elements[index])
+        }
+
         modal_body.appendChild(modal_main_title)
         modal_body.appendChild(modal_sub_title)
+        modal_body.appendChild(inner_content)
         modal_body.appendChild(button_group)
 
         modal_content.appendChild(modal_body)
@@ -67,5 +75,12 @@ class ModalButton extends HTMLElement {
     }
 }
 
+class ModalContent extends HTMLElement { 
+    connectedCallback() {
+        let contents = this.innerHTML
 
-export { Modal, ModalButton }
+    }
+}
+
+
+export { Modal, ModalButton, ModalContent }

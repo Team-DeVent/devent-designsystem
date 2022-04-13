@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    {{> head}}
+  <body>
+    <dds-navbar nav-title="DDS" nav-fixed="top">
+        <dds-navbar-item item-link="/about">소개</dds-navbar-item>
+    </dds-navbar>
+
+
+
+    <dds-header 
+        header-title="소개"
+        header-sub-title="데벤트의 디자인 시스템을 소개합니다.">
+        
+    </dds-header>
+
+
+
+    
+    <section class="py-1" id="features">
+        <div class="container-fluid px-4 my-5">
+            <div class="row d-flex align-items-start">
+
+                <h2 class="h4 fw-bolder font-weight-md mt-2">개발 의도 </h2>
+
+                <p class="font-weight-sm mb-2">디자인 시스템을 만들기 전, 데벤트는 각 사이트마다 다른 디자인을 차용했어요. 그러다보니 디자인의 통일성이 떨어지고 자주 쓰이는 코드들은 이전 사이트에서 가져와야 하는 불편함이 생겼죠.</p>
+                <p class="font-weight-sm mb-2">이때 디자인 시스템이 필요하다고 생각했어요. 부트스트랩5 기반으로 능동적이고 빠른 개발이 가능하겠다 싶었죠. 데벤트만의 실용적인 디자인 시스템을 위해 기술스택을 지정해야했어요. </p>
+                <p class="font-weight-sm mb-2">처음에는 이참에 리엑트로 전환할까 생각해보았었는데 이전에 서비스를 만들며 제이쿼리를 사용했었던 기억이 났어요. 사실 그때 바닐라로 전환하느라 고생좀 했던 기억때문에 이후로는 프레임워크 의존도를 줄여야겠다고 생각하게 되었어요. </p>
+                <p class="font-weight-sm mb-2">그런 와중에 웹 컴포넌트라고 순수 자바스크립트로 HTML 컴포넌트를 만들 수 있더라고요. 딱 이거다 싶었죠. 프레임워크 의존도 없이 순수하니까요. </p>
+                <p class="font-weight-sm mb-2">그래서 CSS도 순수로 개발했었어요. 근데 아직까지 CSS는 못쓰겠더라고요. 그래서 SASS로 전환하면서 디자인을 간략화하고 조금 더 빠른 개발을 하게 되었어요. 여기에 써보고 싶었던 웹팩을 적용하면서 디자인 시스템을 구성하게 되었죠. </p>
+
+                <h2 class="h4 fw-bolder font-weight-md mt-2">목표 </h2>
+
+                <p class="font-weight-sm mb-2">디자인 시스템의 목표는 지속가능하고 확장성있어야 한다고 생각해요. 사실 데벤트 자체가 1인 개발로 이루어져 있어서 디자인시스템 없이도 큰 문제는 없어요. 그럼에도 학업과 병행하다보니 전체 서비스 코드에 대한 재사용율을 낮추기만 해도 시간이 남더라고요. 남는 시간에는 서비스 완성도에 신경쓸 수 있고요.</p>
+                <p class="font-weight-sm mb-2">우선 "DDS-프로토타입"의 목표는 자주 쓰이는 스타일을 컴포넌트화 하는 거에요. 뭐, 간단한 투두를 만들기에는 컴포넌트만 사용해도 손색없을 정도로 만들어보려고요. 디자인 시스템 덕분에 프론트엔드 기능 구현에 있어 신경을 쓰지 않고 UX적인 부분을 신경쓰게 된다는 점에서 시간절약이 된다고 생각했어요.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    {{> footer}}
+
+  </body>
+</html>

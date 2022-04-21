@@ -31,7 +31,7 @@ class Header extends HTMLElement {
         main_title.classList.add('display-5', 'fw-bolder', 'text-dark', 'font-weight-lg', 'mb-2')
         main_title.innerText = maintitle
 
-        sub_title.classList.add('lead', 'text-dark-50', 'font-weight-sm', 'mb-4')
+        sub_title.classList.add('font-weight-sm', 'mb-4', 'mt-3')
         sub_title.innerText = subtitle
 
         body_button.classList.add('d-grid', 'gap-3', 'd-sm-flex', 'justify-content-sm-center')

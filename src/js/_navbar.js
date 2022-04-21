@@ -88,7 +88,7 @@ class NavbarItem extends HTMLElement {
         let item_li = document.createElement('li')
         let item_link = document.createElement('a')
 
-        item_li.classList.add('navbar-item', 'px-2');
+        item_li.classList.add('navbar-item', 'pl-2', 'd-flex', 'flex-row-reverse');
         item_link.classList.add('font-link', 'font-weight-sm')
         item_link.setAttribute('aria-current', 'page')
         item_link.setAttribute('href', link)

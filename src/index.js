@@ -4,6 +4,9 @@ import { Modal, ModalButton, ModalContent } from './js/_modal.js';
 import { Sidebar } from './js/_sidebar.js';
 import { Footer } from './js/_footer.js';
 import { Popup } from './js/_popup.js';
+import { Dropdown } from './js/_dropdown.js';
+
+
 
 import "./scss/style.scss";
     
@@ -22,3 +25,5 @@ customElements.define('dds-content', ModalContent);
 customElements.define('dds-footer', Footer);
 
 customElements.define('dds-popup', Popup);
+
+customElements.define('dds-dropdown', Dropdown);

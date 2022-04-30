@@ -1,21 +1,19 @@
 @import 'foundation/color';
 @import 'foundation/variable';
 
-
-
-.toast {
+.dropdown-menu {
     border-radius: $border-radius;
     border: $border-line;
     box-shadow: $border-shadow;
-    margin-bottom: 7px !important;
+    padding: 0rem .2rem !important;
+
     background-color: #ffffffba;
     -webkit-backdrop-filter: saturate(120%) blur(8px);
     backdrop-filter: saturate(120%) blur(8px);
 }
 
-.toast-header {
-    border-bottom: none !important;
+.dropdown-item {
     border-radius: $border-radius;
-    background-color: #ffffff00;
-
+    padding: 0.55rem 1rem !important;
+    margin: .2rem 0rem;
 }

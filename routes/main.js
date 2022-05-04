@@ -7,6 +7,9 @@ router.get('/', function(req, res) {
 router.get('/about', function(req, res) {
     res.render('static/about')
 });
+router.get('/guide', function(req, res) {
+    res.render('static/guide')
+});
 
 router.get('/auth/login', function(req, res) {
     res.render('user/login')

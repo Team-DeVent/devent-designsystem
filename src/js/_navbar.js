@@ -46,7 +46,7 @@ class Navbar extends HTMLElement {
 
 
         body_nav.classList.add('navbar', 'navbar-expand-lg', 'navbar-light', 'navbar-blur', `fixed-${fixed}`);
-        body_container.classList.add('container-fluid', 'px-4', 'py-2')
+        body_container.classList.add('container-fluid', 'px-4', 'py-1')
 
         a_title.classList.add('navbar-brand')
         a_title.setAttribute('href', '/')

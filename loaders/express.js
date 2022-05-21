@@ -23,6 +23,8 @@ export async function init (app) {
     app.use(cookieParser());
 
     app.use('/', express.static('src'));
+    app.use('/image', express.static('image'));
+
     app.use('/dist', express.static('dist'));
 
     app.use('/', mainRouter);

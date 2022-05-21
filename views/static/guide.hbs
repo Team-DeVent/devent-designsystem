@@ -4,13 +4,15 @@
   <body>
     <dds-navbar nav-title="DDS" nav-fixed="top">
         <dds-navbar-item item-link="/about">소개</dds-navbar-item>
+        <dds-navbar-item item-link="/guide">가이드라인</dds-navbar-item>
+
     </dds-navbar>
 
 
 
     <dds-header 
         header-title="가이드라인"
-        header-sub-title="UX 라이팅, 비전과 철학을 제시합니다.">
+        header-sub-title="디자인 시스템, 비전과 철학을 제시합니다.">
         
         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
             <button class="btn btn-blue font-weight-sm px-4 py-3 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -31,7 +33,7 @@
                     sidebar-id="offcanvasExample">
 
                     <dds-navtab>
-                        <dds-navtab-item item-id="home" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="principle" is-selected="false"></dds-navtab-item>
 
                         <dds-navtab-item item-id="typo" is-selected="false"></dds-navtab-item>
 
@@ -41,7 +43,10 @@
 
 
                 <div class="col tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-typo" role="tabpanel" aria-labelledby="v-pills-typo-tab">
+                    <div class="tab-pane fade show active" id="v-pills-principle" role="tabpanel" aria-labelledby="v-pills-principle-tab">
+{{> pages/guides/principle}}
+                    </div>
+                    <div class="tab-pane fade show" id="v-pills-typo" role="tabpanel" aria-labelledby="v-pills-typo-tab">
 {{> pages/guides/typo}}
                     </div>
 

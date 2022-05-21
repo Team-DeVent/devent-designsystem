@@ -6,9 +6,17 @@ class Popup extends HTMLElement {
         let delay = this.getAttribute('popup-delay')
         let autohide = this.getAttribute('popup-autohide')
 
+        let color = this.getAttribute('popup-class-color')
+        let textcolor = this.getAttribute('popup-class-textcolor')
+
+        let colorhex = this.getAttribute('popup-style-colorhex')
+
 
         let body = document.createElement('div')
         body.classList.add('toast');
+        !color == false ? body.classList.add(color) : {}
+        !textcolor == false ? body.classList.add(textcolor) : {}
+        body.style.backgroundColor = !colorhex == false ? colorhex : {}
         body.setAttribute('id', id)
         body.setAttribute('role', 'alert')
         body.setAttribute('data-bs-animation', 'true')
@@ -31,7 +39,7 @@ class Popup extends HTMLElement {
         this.innerHTML = ''
 
         body_header.appendChild(header_title)
-        body.appendChild(body_header)
+        !title == false ? body.appendChild(body_header) : {}
         body.appendChild(body_content)
 
         this.appendChild(body)

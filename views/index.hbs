@@ -35,18 +35,19 @@
                     <dds-navtab>
                         <dds-navtab-item item-id="home" is-selected="false"></dds-navtab-item>
 
-                        <dds-navtab-item item-id="header" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="badge" is-selected="false"></dds-navtab-item>
+
+                        <dds-navtab-item item-id="button" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="color" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="dropdown" is-selected="false"></dds-navtab-item>
-
                         <dds-navtab-item item-id="footer" is-selected="false"></dds-navtab-item>
-                        <dds-navtab-item item-id="navbar" is-selected="false"></dds-navtab-item>
-                        <dds-navtab-item item-id="sidebar" is-selected="false"></dds-navtab-item>
-                        <dds-navtab-item item-id="button" is-selected="false"></dds-navtab-item>
-                        <dds-navtab-item item-id="popup" is-selected="false"></dds-navtab-item>
-
-                        <dds-navtab-item item-id="modal" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="header" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="form" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="navbar" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="modal" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="popup" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="sidebar" is-selected="false"></dds-navtab-item>
+
 
                     </dds-navtab>
                 </dds-sidebar>
@@ -57,6 +58,14 @@
 {{> pages/components/home}}
                     </div>
 
+                    <div class="tab-pane fade" id="v-pills-badge" role="tabpanel" aria-labelledby="v-pills-badge-tab">
+{{> pages/components/badge}}
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-button" role="tabpanel" aria-labelledby="v-pills-button-tab">
+{{> pages/components/button}}
+                    </div>
+
                     <div class="tab-pane fade" id="v-pills-color" role="tabpanel" aria-labelledby="v-pills-color-tab">
 {{> pages/components/color}}
                     </div>
@@ -65,41 +74,40 @@
 {{> pages/components/dropdown}}
                     </div>
 
-                    <div class="tab-pane fade" id="v-pills-header" role="tabpanel" aria-labelledby="v-pills-header-tab">
-{{> pages/components/header}}
-                    </div>
-
                     <div class="tab-pane fade" id="v-pills-footer" role="tabpanel" aria-labelledby="v-pills-footer-tab">
 {{> pages/components/footer}}
                     </div>
 
+                    <div class="tab-pane fade" id="v-pills-header" role="tabpanel" aria-labelledby="v-pills-header-tab">
+{{> pages/components/header}}
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-form" role="tabpanel" aria-labelledby="v-pills-form-tab">
+{{> pages/components/input}}
+                    </div>
+
                     <div class="tab-pane fade" id="v-pills-navbar" role="tabpanel" aria-labelledby="v-pills-navbar-tab">
 {{> pages/components/navbar}}
-                    </div>
-                    
-
-                    <div class="tab-pane fade" id="v-pills-sidebar" role="tabpanel" aria-labelledby="v-pills-sidebar-tab">
-{{> pages/components/sidebar}}
-                    </div>
-
-                    <div class="tab-pane fade" id="v-pills-button" role="tabpanel" aria-labelledby="v-pills-button-tab">
-{{> pages/components/button}}
-                    </div>
-
-
-                    <div class="tab-pane fade" id="v-pills-popup" role="tabpanel" aria-labelledby="v-pills-popup-tab">
-{{> pages/components/popup}}
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-modal" role="tabpanel" aria-labelledby="v-pills-modal-tab">
 {{> pages/components/modal}}
                     </div>
 
-
-
-                    <div class="tab-pane fade" id="v-pills-form" role="tabpanel" aria-labelledby="v-pills-form-tab">
-{{> pages/components/input}}
+                    <div class="tab-pane fade" id="v-pills-popup" role="tabpanel" aria-labelledby="v-pills-popup-tab">
+{{> pages/components/popup}}
                     </div>
+
+                    <div class="tab-pane fade" id="v-pills-sidebar" role="tabpanel" aria-labelledby="v-pills-sidebar-tab">
+{{> pages/components/sidebar}}
+                    </div>
+
+
+                    
+
+
+
+
                 </div>
             </div>
         </div>
@@ -110,7 +118,7 @@
         <dds-popup
             popup-id="myToastEl"
             popup-delay="5000"
-            popup-autohide="false"
+            popup-autohide="true"
             popup-style-colorhex="#ffffffba">  <div class="text-center font-weight-md ">안녕하세요. 테스트 팝업이에요.</div> 
         </dds-popup>
 

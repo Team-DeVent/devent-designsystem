@@ -1,0 +1,38 @@
+@import 'foundation/color';
+@import 'foundation/variable';
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+    border-style: none !important;
+}
+
+tbody > tr {
+    border-radius: $border-radius;
+    transition: all .24s ease-out;
+
+    &:hover {
+        background-color: $light-100;
+        padding-left: 6px !important;
+        transition: all .1s ease-in;
+
+    }
+
+    &:first-child, td:first-child { border-top-left-radius: $border-radius; }
+    &:first-child, td:last-child { border-top-right-radius: $border-radius; }
+
+    &:last-child, td:first-child { border-bottom-left-radius: $border-radius; }
+    &:last-child, td:last-child { border-bottom-right-radius: $border-radius; }
+
+    &:first-child, th:first-child { border-top-left-radius: $border-radius; }
+    &:first-child, th:last-child { border-top-right-radius: $border-radius; }
+
+    &:last-child, th:first-child { border-bottom-left-radius: $border-radius; }
+    &:last-child, th:last-child { border-bottom-right-radius: $border-radius; }
+
+
+}
+

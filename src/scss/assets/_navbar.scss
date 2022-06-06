@@ -41,3 +41,16 @@
 .nav-tab {
     width: 100%;
 }
+
+.nav-link {
+    text-align:left; 
+    padding-left:0px !important;
+    transition: all .24s ease-out;
+
+    &:hover, &:focus, &:active, &:visited {
+        background-color: $blue-100;
+        padding-left: 6px !important;
+        transition: all .1s ease-in;
+
+    }
+}

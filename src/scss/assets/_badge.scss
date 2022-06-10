@@ -1,0 +1,70 @@
+@import 'foundation/color';
+@import 'foundation/variable';
+
+
+@mixin badges($color-text, $color-background) {
+    background-color: $color-background;
+    color: $color-text;
+
+    @content;
+}
+  
+
+.badge-blue-tint {
+    @include badges(
+        $color-text: $blue-300, 
+        $color-background: $blue-100
+    ) {}
+}
+
+.badge-blue-fill {
+    @include badges(
+        $color-text: $light-100, 
+        $color-background: $blue-300
+    ) {}
+}
+
+
+.badge-green-tint {
+    @include badges(
+        $color-text: $green-300, 
+        $color-background: $green-100
+    ) {}
+}
+
+.badge-green-fill {
+    @include badges(
+        $color-text: $light-100, 
+        $color-background: $green-300
+    ) {}
+}
+
+
+.badge-red-tint {
+    @include badges(
+        $color-text: $red-300, 
+        $color-background: $red-100
+    ) {}
+}
+
+.badge-red-fill {
+    @include badges(
+        $color-text: $light-100, 
+        $color-background: $red-300
+    ) {}
+}
+
+
+.badge-yellow-tint {
+    @include badges(
+        $color-text: $yellow-300, 
+        $color-background: $yellow-100
+    ) {}
+}
+
+.badge-yellow-fill {
+    @include badges(
+        $color-text: $light-100, 
+        $color-background: $yellow-300
+    ) {}
+}

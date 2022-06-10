@@ -40,6 +40,95 @@
   ) {}
 }
 
+.btn-blue-tint {
+  @include buttons(
+    $color-100: $blue-100, 
+    $color-200: $blue-200,
+    $color-300: $blue-300
+  ) {}
+}
+
+.btn-blue-fill {
+  @include buttons(
+    $color-100: $blue-300, 
+    $color-200: $blue-400,
+    $color-300: $light-100
+  ) {}
+}
+
+.btn-green {
+  @include buttons(
+    $color-100: $green-100, 
+    $color-200: $green-200,
+    $color-300: $green-300
+  ) {}
+}
+
+.btn-green-tint {
+  @include buttons(
+    $color-100: $green-100, 
+    $color-200: $green-200,
+    $color-300: $green-300
+  ) {}
+}
+
+.btn-green-fill {
+  @include buttons(
+    $color-100: $green-300, 
+    $color-200: $green-400,
+    $color-300: $light-100
+  ) {}
+}
+
+.btn-red {
+  @include buttons(
+    $color-100: $red-100, 
+    $color-200: $red-200,
+    $color-300: $red-300
+  ) {}
+}
+
+.btn-red-tint {
+  @include buttons(
+    $color-100: $red-100, 
+    $color-200: $red-200,
+    $color-300: $red-300
+  ) {}
+}
+
+.btn-red-fill {
+  @include buttons(
+    $color-100: $red-300, 
+    $color-200: $red-400,
+    $color-300: $light-100
+  ) {}
+}
+
+.btn-yellow {
+  @include buttons(
+    $color-100: $yellow-100, 
+    $color-200: $yellow-200,
+    $color-300: $yellow-300
+  ) {}
+}
+
+.btn-yellow-tint {
+  @include buttons(
+    $color-100: $yellow-100, 
+    $color-200: $yellow-200,
+    $color-300: $yellow-300
+  ) {}
+}
+
+.btn-yellow-fill {
+  @include buttons(
+    $color-100: $yellow-300, 
+    $color-200: $yellow-400,
+    $color-300: $light-100
+  ) {}
+}
+
+
 .btn-light {
   @include buttons(
     $color-100: $light-100, 
@@ -56,29 +145,11 @@
   ) {}
 }
 
-.btn-green {
-  @include buttons(
-    $color-100: $green-100, 
-    $color-200: $green-200,
-    $color-300: $green-300
-  ) {}
-}
 
-.btn-red {
-  @include buttons(
-    $color-100: $red-100, 
-    $color-200: $red-200,
-    $color-300: $red-300
-  ) {}
-}
 
-.btn-yellow {
-  @include buttons(
-    $color-100: $yellow-100, 
-    $color-200: $yellow-200,
-    $color-300: $yellow-300
-  ) {}
-}
+
+
+
 
 .btn-transparent {
   background-color: transparent !important;

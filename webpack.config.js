@@ -3,7 +3,9 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 export default 
 {
-    "entry":["./src/index.js"],
+    "entry": {
+        "main": "./src/index.js"
+    },
     "watch": true,
     "plugins": [
         new MiniCssExtractPlugin({ filename: `style.css` })

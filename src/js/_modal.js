@@ -7,6 +7,7 @@ class Modal extends HTMLElement {
         let modalid = this.getAttribute('modal-id')
         let modalmaintitle = this.getAttribute('modal-title')
         let modalsubtitle = this.getAttribute('modal-subtitle')
+        let modalalign = this.getAttribute('modal-align') || 'center'
 
 
         let body = document.createElement('div')
@@ -27,7 +28,7 @@ class Modal extends HTMLElement {
         body.setAttribute('aria-labelledby', modalid+'Label')
         body.setAttribute('aria-hidden', 'true')
 
-        modal_dialog.classList.add('modal-dialog', 'modal-dialog-centered')
+        modal_dialog.classList.add('modal-dialog', 'modal-dialog-centered', 'd-flex', `align-items-${modalalign}`)
         modal_content.classList.add('modal-content')
         modal_body.classList.add('modal-body')
 

@@ -16,4 +16,9 @@
     border-radius: $border-radius;
     padding: 0.55rem 1rem !important;
     margin: .2rem 0rem;
+
+    &:hover {
+        background-color: #e6e7e87d;
+        color: #212529;
+    }
 }

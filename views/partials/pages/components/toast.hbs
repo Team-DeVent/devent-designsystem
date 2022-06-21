@@ -1,0 +1,156 @@
+<h2 class="h4 fw-bolder font-weight-md mt-2">토스트 </h2>
+<p class="font-weight-sm mb-4">
+    하단 토스트 입니다. 부트스트랩 toast기능입니다.
+</p>
+
+<pre>
+    <div class="toast-container">
+        <dds-toast
+            toast-title="테스트 팝업"
+            toast-id="myToastEl2"
+            toast-delay="5000"
+            toast-autohide="false">안녕하세요. <b class="text-danger">반가워요.</b> 테스트 팝업이에요.
+        </dds-toast>
+    </div>
+</pre>
+
+<pre class="mt-4"><code data-language="html">&lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
+    &lt;dds-toast
+        toast-title=&quot;테스트 팝업&quot;
+        toast-id=&quot;myToastEl&quot;
+        toast-delay=&quot;5000&quot;
+        toast-autohide=&quot;false&quot;&gt;
+        안녕하세요 &lt;b class=&quot;text-danger&quot;&gt;반가워요.&lt;/b&gt; 테스트 팝업이에요. 
+
+    &lt;/dds-toast&gt;
+&lt;/div&gt;</code></pre>
+
+<br>
+<h2 class="h4 fw-bolder font-weight-md mt-2">콘텐츠만 </h2>
+<p class="font-weight-sm mb-4">
+    콘텐츠만 불러와요
+</p>
+
+<pre>
+    <div class="toast-container">
+        <dds-toast
+            toast-id="myToastEl"
+            toast-delay="5000"
+            toast-autohide="false">안녕하세요. 콘텐츠테스트 팝업이에요.
+        </dds-toast>
+    </div>
+</pre>
+
+<pre class="mt-4"><code data-language="html">&lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
+    &lt;dds-toast
+        toast-id=&quot;myToastEl&quot;
+        toast-delay=&quot;5000&quot;
+        toast-autohide=&quot;false&quot;&gt;안녕하세요. 콘텐츠테스트 팝업이에요.
+    &lt;/dds-toast&gt;
+&lt;/div&gt;</code></pre>
+
+
+<br>
+<h2 class="h4 fw-bolder font-weight-md mt-2">색 클래스 지정 </h2>
+<p class="font-weight-sm mb-4">
+    색 클래스를 지정헤요.
+</p>
+
+<pre>
+    <div class="toast-container">
+        <dds-toast
+            toast-id="myToastEl"
+            toast-delay="5000"
+            toast-autohide="false"
+            toast-class-color="bg-dark"
+            toast-class-textcolor="text-light">안녕하세요. 테스트 팝업이에요.
+        </dds-toast>
+    </div>
+</pre>
+
+<pre class="mt-4"><code data-language="html">&lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
+    &lt;dds-toast
+        toast-id=&quot;myToastEl&quot;
+        toast-delay=&quot;5000&quot;
+        toast-autohide=&quot;false&quot;
+        toast-class-color=&quot;bg-dark&quot;
+        toast-class-textcolor=&quot;text-light&quot;&gt;안녕하세요. 테스트 팝업이에요.
+    &lt;/dds-toast&gt;
+&lt;/div&gt;</code></pre>
+
+<br>
+<h2 class="h4 fw-bolder font-weight-md mt-2">색 HEX 지정 </h2>
+<p class="font-weight-sm mb-4">
+    색 HEX를 지정헤요.
+</p>
+
+<pre>
+    <div class="toast-container">
+        <dds-toast
+            toast-id="myToastEl"
+            toast-delay="5000"
+            toast-autohide="false"
+            toast-class-textcolor="text-light"
+            toast-style-colorhex="#5A6169ba">안녕하세요. 테스트 팝업이에요.
+        </dds-toast>
+    </div>
+</pre>
+
+<pre class="mt-4"><code data-language="html">&lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
+    &lt;dds-toast
+        toast-id=&quot;myToastEl&quot;
+        toast-delay=&quot;5000&quot;
+        toast-autohide=&quot;false&quot;
+        toast-class-textcolor=&quot;text-light&quot;
+        toast-style-colorhex=&quot;#5A6169ba&quot;&gt;안녕하세요. 테스트 팝업이에요.
+    &lt;/dds-toast&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+<br>
+<h2 class="h4 fw-bolder font-weight-md mt-2">가운데 정렬 </h2>
+<p class="font-weight-sm mb-4">
+    색 HEX를 지정헤요.
+</p>
+
+<pre>
+    <div class="toast-container ">
+        <dds-toast
+            toast-id="myToastEl"
+            toast-delay="5000"
+            toast-autohide="false"
+            toast-style-colorhex="#ffffffba">  <div class="text-center font-weight-md ">안녕하세요. 테스트 팝업이에요.</div> 
+        </dds-toast>
+
+    </div>
+</pre>
+
+<pre class="mt-4"><code data-language="html">&lt;div class=&quot;toast-container position-fixed bottom-0 start-50 translate-middle&quot;&gt;
+    &lt;dds-toast
+        toast-id=&quot;myToastEl&quot;
+        toast-delay=&quot;5000&quot;
+        toast-autohide=&quot;false&quot;
+        toast-style-colorhex=&quot;#ffffffba&quot;&gt;  &lt;div class=&quot;text-center font-weight-md &quot;&gt;안녕하세요. 테스트 팝업이에요.&lt;/div&gt; 
+    &lt;/dds-toast&gt;
+
+&lt;/div&gt;</code></pre>
+
+
+
+
+
+
+<br>
+<h2 class="h4 fw-bolder font-weight-md mt-2">JS Handle </h2>
+<p class="font-weight-sm mb-4">
+    자바스크립트 핸들링 이에요. 팝업을 자동으로 생성해요
+</p>
+
+<button class="btn btn-blue-tint" onclick="dds.toast({content: '<i class=\'fas fa-ad\'></i> 테스트인데, 폰트어썸이 들어간.'})">go</button>
+
+
+<pre class="mt-4"><code data-language="javascript">dds.toast({
+    content: '테스트 테스트'
+})</code></pre>
+

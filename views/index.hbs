@@ -45,7 +45,7 @@
                         <dds-navtab-item item-id="form" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="navbar" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="modal" is-selected="false"></dds-navtab-item>
-                        <dds-navtab-item item-id="popup" is-selected="false"></dds-navtab-item>
+                        <dds-navtab-item item-id="toast" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="sidebar" is-selected="false"></dds-navtab-item>
                         <dds-navtab-item item-id="table" is-selected="false"></dds-navtab-item>
 
@@ -95,8 +95,8 @@
 {{> pages/components/modal}}
                     </div>
 
-                    <div class="tab-pane fade" id="v-pills-popup" role="tabpanel" aria-labelledby="v-pills-popup-tab">
-{{> pages/components/popup}}
+                    <div class="tab-pane fade" id="v-pills-toast" role="tabpanel" aria-labelledby="v-pills-toast-tab">
+{{> pages/components/toast}}
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-sidebar" role="tabpanel" aria-labelledby="v-pills-sidebar-tab">
@@ -118,12 +118,12 @@
 
 
     <div class="toast-container position-fixed bottom-0 start-50 translate-middle">
-        <dds-popup
-            popup-id="myToastEl"
-            popup-delay="5000"
-            popup-autohide="true"
-            popup-style-colorhex="#ffffffba">  <div class="text-center font-weight-md ">안녕하세요. 테스트 팝업이에요.</div> 
-        </dds-popup>
+        <dds-toast
+            toast-id="myToastEl"
+            toast-delay="5000"
+            toast-autohide="true"
+            toast-style-colorhex="#ffffffba">  <div class="text-center font-weight-md ">안녕하세요. 테스트 팝업이에요.</div> 
+        </dds-toast>
 
     </div>
 

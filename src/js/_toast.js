@@ -1,15 +1,15 @@
-class Popup extends HTMLElement { 
+class Toast extends HTMLElement { 
     connectedCallback() {
         let innerbody = this.innerHTML
-        let title = this.getAttribute('popup-title')
-        let id = this.getAttribute('popup-id')
-        let delay = this.getAttribute('popup-delay')
-        let autohide = this.getAttribute('popup-autohide')
+        let title = this.getAttribute('toast-title')
+        let id = this.getAttribute('toast-id')
+        let delay = this.getAttribute('toast-delay')
+        let autohide = this.getAttribute('toast-autohide')
 
-        let color = this.getAttribute('popup-class-color')
-        let textcolor = this.getAttribute('popup-class-textcolor')
+        let color = this.getAttribute('toast-class-color')
+        let textcolor = this.getAttribute('toast-class-textcolor')
 
-        let colorhex = this.getAttribute('popup-style-colorhex')
+        let colorhex = this.getAttribute('toast-style-colorhex')
 
 
         let body = document.createElement('div')
@@ -44,11 +44,11 @@ class Popup extends HTMLElement {
 
         this.appendChild(body)
 
-        let popup_elements = body
-        let popup = bootstrap.Toast.getOrCreateInstance(popup_elements)
+        let toast_elements = body
+        let toast = bootstrap.Toast.getOrCreateInstance(toast_elements)
 
-        popup.show()
+        toast.show()
     }
 }
 
-export { Popup }
+export { Toast }

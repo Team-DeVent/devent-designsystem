@@ -50,7 +50,7 @@ class Navbar extends HTMLElement {
 
         a_title.classList.add('navbar-brand')
         a_title.setAttribute('href', '/')
-        a_title.innerText = title
+        a_title.innerHTML = title
 
         button_toggle.classList.add('navbar-toggler')
         button_toggle.setAttribute('id', toggle_button_id)

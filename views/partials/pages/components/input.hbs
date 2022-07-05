@@ -79,3 +79,34 @@
 <pre class="mt-4"><code data-language="javascript">document.getElementById('input_tag_thisisid').parentNode.tags</code></pre>
 
 
+<br>
+<h2 class="h4 fw-bolder font-weight-md mt-2">태그 선택 </h2>
+
+<p class="font-weight-sm mb-4">
+    여러개의 정해진 태그를 입력받을 때 사용되어요. 예를들어 관심분야 선정이나 기타 사용자에게 추천할만한 선택지가 있을 떄 주로 사용되죠.
+</p>
+
+
+<dds-select-tag tag-id="aaaa">
+    <span class="badge badge-blue-tint me-1" value="clicked">onclick4</span>
+    <span class="badge badge-blue-tint me-1" value="clicked">onclick2</span>
+    <span class="badge badge-blue-tint me-1" value="clicked">onclickds4</span>
+    <span class="badge badge-blue-tint me-1" value="clicked">onclick3</span>
+    <span class="badge badge-blue-tint me-1" value="clicked">onclick5</span>
+    <span class="badge badge-blue-tint me-1" value="clicked">onclick6</span>
+</dds-select-tag>
+
+<pre class="mt-4"><code data-language="html">&lt;dds-select-tag tag-id=&quot;aaaa&quot;&gt;
+    &lt;span class=&quot;badge badge-blue-tint me-1&quot; value=&quot;clicked&quot;&gt;onclick4&lt;/span&gt;
+    &lt;span class=&quot;badge badge-blue-tint me-1&quot; value=&quot;clicked&quot;&gt;onclick2&lt;/span&gt;
+    &lt;span class=&quot;badge badge-blue-tint me-1&quot; value=&quot;clicked&quot;&gt;onclickds4&lt;/span&gt;
+    &lt;span class=&quot;badge badge-blue-tint me-1&quot; value=&quot;clicked&quot;&gt;onclick3&lt;/span&gt;
+    &lt;span class=&quot;badge badge-blue-tint me-1&quot; value=&quot;clicked&quot;&gt;onclick5&lt;/span&gt;
+    &lt;span class=&quot;badge badge-blue-tint me-1&quot; value=&quot;clicked&quot;&gt;onclick6&lt;/span&gt;
+&lt;/dds-select-tag&gt;
+</code></pre>
+
+<pre class="mt-4"><code data-language="javascript">document.getElementById('select_tag_aaaa').parentNode.tags</code></pre>
+
+
+

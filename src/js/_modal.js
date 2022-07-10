@@ -9,12 +9,17 @@ class Modal extends HTMLElement {
         let modalsubtitle = this.getAttribute('modal-subtitle')
         let modalalign = this.getAttribute('modal-align') || 'center'
         let contentalign = this.getAttribute('content-align') || 'start'
+        let isscrollable = this.getAttribute('is-scrollable') || 'false'
+
+        
         
 
         let body = document.createElement('div')
         let modal_dialog = document.createElement('div')
         let modal_content = document.createElement('div')
         let modal_body = document.createElement('div')
+        let modal_footer = document.createElement('div')
+
         let inner_content = document.createElement('div')
 
         let modal_main_title = document.createElement('h5')
@@ -30,8 +35,13 @@ class Modal extends HTMLElement {
         body.setAttribute('aria-hidden', 'true')
 
         modal_dialog.classList.add('modal-dialog', 'modal-dialog-centered', 'd-flex', `align-items-${modalalign}`)
+        if (isscrollable == 'true') {
+            modal_dialog.classList.add('modal-dialog-scrollable')
+        }
+
         modal_content.classList.add('modal-content', `text-${contentalign}`)
         modal_body.classList.add('modal-body')
+        modal_footer.classList.add('modal-bottom')
 
         modal_main_title.classList.add('modal-title', 'font-weight-lg')
         modal_main_title.innerText = modalmaintitle
@@ -49,12 +59,17 @@ class Modal extends HTMLElement {
             inner_content.appendChild(inner_elements[index])
         }
 
+        modal_footer.appendChild(button_group)
         modal_body.appendChild(modal_main_title)
         modal_body.appendChild(modal_sub_title)
         modal_body.appendChild(inner_content)
-        modal_body.appendChild(button_group)
+        
+        //modal_body.appendChild(button_group)
+
 
         modal_content.appendChild(modal_body)
+        modal_content.appendChild(modal_footer)
+
         modal_dialog.appendChild(modal_content)
         body.appendChild(modal_dialog)
 

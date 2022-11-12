@@ -4,8 +4,38 @@
 
 .navbar-item {
     padding-left: 0rem;
-    padding: 0.5rem 0rem 0.5rem 0rem;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    animation-name: navbar-item-padding-hide;
+    animation-duration:.1s;
+    animation-duration: leaner;
+
+    .show & {
+        padding: 0.5rem 0rem 0.5rem 0rem;
+        animation-name: navbar-item-padding-show;
+        animation-duration:.3s;
+        animation-duration: leaner;
+
+    }
 }
+
+@keyframes navbar-item-padding-show {
+    0% {
+        padding-left: 1rem;
+    }
+    100% {
+        padding-left: 0rem;
+    }
+  }
+
+  @keyframes navbar-item-padding-hide {
+    0% {
+        padding-left: 0rem;
+    }
+    100% {
+        padding-left: 1rem;
+    }
+  }
+
 
 .navbar-blur {
     background-color: #ffffffd5;

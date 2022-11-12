@@ -12,7 +12,7 @@
 
 .badge-blue-tint {
     @include badges(
-        $color-text: $blue-300, 
+        $color-text: $blue-500, 
         $color-background: $blue-100
     ) {}
 }
@@ -20,14 +20,14 @@
 .badge-blue-fill {
     @include badges(
         $color-text: $light-100, 
-        $color-background: $blue-300
+        $color-background: $blue-500
     ) {}
 }
 
 
 .badge-green-tint {
     @include badges(
-        $color-text: $green-300, 
+        $color-text: $green-500, 
         $color-background: $green-100
     ) {}
 }
@@ -35,14 +35,14 @@
 .badge-green-fill {
     @include badges(
         $color-text: $light-100, 
-        $color-background: $green-300
+        $color-background: $green-500
     ) {}
 }
 
 
 .badge-red-tint {
     @include badges(
-        $color-text: $red-300, 
+        $color-text: $red-500, 
         $color-background: $red-100
     ) {}
 }
@@ -50,14 +50,14 @@
 .badge-red-fill {
     @include badges(
         $color-text: $light-100, 
-        $color-background: $red-300
+        $color-background: $red-500
     ) {}
 }
 
 
 .badge-yellow-tint {
     @include badges(
-        $color-text: $yellow-300, 
+        $color-text: $yellow-500, 
         $color-background: $yellow-100
     ) {}
 }
@@ -65,6 +65,6 @@
 .badge-yellow-fill {
     @include badges(
         $color-text: $light-100, 
-        $color-background: $yellow-300
+        $color-background: $yellow-500
     ) {}
 }

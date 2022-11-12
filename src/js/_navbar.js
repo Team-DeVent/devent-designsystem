@@ -81,15 +81,28 @@ class Navbar extends HTMLElement {
 }
 
 class NavbarItem extends HTMLElement { 
+    constructor() {
+        super();
+
+        this.link = '/';
+
+    }
+
+    onclick() {
+        location.href = this.link
+    }
+
     connectedCallback() {
+        this.addEventListener('click', this.onclick.bind(this));
         let content = this.innerHTML
         let link = this.getAttribute('item-link')
-        
+        this.link = link
+
         let item_li = document.createElement('li')
         let item_link = document.createElement('a')
 
-        item_li.classList.add('navbar-item', 'pl-2', 'd-flex', 'flex-row-reverse');
-        item_link.classList.add('font-link', 'font-weight-sm')
+        item_li.classList.add('navbar-item', 'pl-2', 'd-flex', 'flex-row');
+        item_link.classList.add('font-link', 'font-weight-sm', 'text-secondary')
         item_link.setAttribute('aria-current', 'page')
         item_link.setAttribute('href', link)
         item_link.innerHTML = content

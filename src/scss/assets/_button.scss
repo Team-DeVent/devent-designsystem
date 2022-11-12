@@ -36,7 +36,7 @@
   @include buttons(
     $color-100: $blue-100, 
     $color-200: $blue-200,
-    $color-300: $blue-300
+    $color-300: $blue-500
   ) {}
 }
 
@@ -44,14 +44,14 @@
   @include buttons(
     $color-100: $blue-100, 
     $color-200: $blue-200,
-    $color-300: $blue-300
+    $color-300: $blue-500
   ) {}
 }
 
 .btn-blue-fill {
   @include buttons(
-    $color-100: $blue-300, 
-    $color-200: $blue-400,
+    $color-100: $blue-600, 
+    $color-200: $blue-700,
     $color-300: $light-100
   ) {}
 }
@@ -60,7 +60,7 @@
   @include buttons(
     $color-100: $green-100, 
     $color-200: $green-200,
-    $color-300: $green-300
+    $color-300: $green-500
   ) {}
 }
 
@@ -68,14 +68,14 @@
   @include buttons(
     $color-100: $green-100, 
     $color-200: $green-200,
-    $color-300: $green-300
+    $color-300: $green-500
   ) {}
 }
 
 .btn-green-fill {
   @include buttons(
-    $color-100: $green-300, 
-    $color-200: $green-400,
+    $color-100: $green-600, 
+    $color-200: $green-700,
     $color-300: $light-100
   ) {}
 }
@@ -84,7 +84,7 @@
   @include buttons(
     $color-100: $red-100, 
     $color-200: $red-200,
-    $color-300: $red-300
+    $color-300: $red-500
   ) {}
 }
 
@@ -92,14 +92,14 @@
   @include buttons(
     $color-100: $red-100, 
     $color-200: $red-200,
-    $color-300: $red-300
+    $color-300: $red-500
   ) {}
 }
 
 .btn-red-fill {
   @include buttons(
-    $color-100: $red-300, 
-    $color-200: $red-400,
+    $color-100: $red-600, 
+    $color-200: $red-700,
     $color-300: $light-100
   ) {}
 }
@@ -108,7 +108,7 @@
   @include buttons(
     $color-100: $yellow-100, 
     $color-200: $yellow-200,
-    $color-300: $yellow-300
+    $color-300: $yellow-500
   ) {}
 }
 
@@ -116,14 +116,14 @@
   @include buttons(
     $color-100: $yellow-100, 
     $color-200: $yellow-200,
-    $color-300: $yellow-300
+    $color-300: $yellow-500
   ) {}
 }
 
 .btn-yellow-fill {
   @include buttons(
-    $color-100: $yellow-300, 
-    $color-200: $yellow-400,
+    $color-100: $yellow-600, 
+    $color-200: $yellow-700,
     $color-300: $light-100
   ) {}
 }
@@ -131,17 +131,17 @@
 
 .btn-light {
   @include buttons(
-    $color-100: $light-100, 
-    $color-200: $light-200,
-    $color-300: $dark
+    $color-100: $gray-100, 
+    $color-200: $gray-200,
+    $color-300: $gray-900
   ) {}
 }
 
 .btn-dark {
   @include buttons(
-    $color-100: $dark, 
-    $color-200: $dark,
-    $color-300: $light-100
+    $color-100: $gray-800, 
+    $color-200: $gray-900,
+    $color-300: $gray-100
   ) {}
 }
 

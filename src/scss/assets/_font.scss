@@ -10,25 +10,24 @@
 .font-weight-lg {
     font-family: 'Noto Sans KR', sans-serif;
     word-break: keep-all;
-    font-weight: 700 !important;
+    font-weight: 700;
 }
 .font-weight-md {
     font-family: 'Noto Sans KR', sans-serif;
     word-break: keep-all;
-    font-weight: 500 !important;
+    font-weight: 500;
 }
 
 .font-weight-sm {
     font-family: 'Noto Sans KR', sans-serif;
     word-break: keep-all;
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 
 .font-link{
     font-family: 'Noto Sans KR', sans-serif;
     word-break: keep-all;
-    font-weight: 400 !important;
-    color: $dark !important;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -37,25 +36,25 @@
 }
 
 .close {
-    font-size: 13px !important;
+    font-size: 13px;
 }
 
 b {
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 
 pre {
-    border: transparent !important;
+    border: transparent;
     background-color: $light-100;
     border-radius: $border-radius;
-    overflow-x: scroll !important;
+    overflow-x: scroll;
     margin-bottom: 0px;
 
 }
 
 code {
-    overflow-x: scroll !important;
+    overflow-x: scroll;
 }
 
 i {

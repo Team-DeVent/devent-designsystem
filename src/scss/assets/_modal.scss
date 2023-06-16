@@ -4,7 +4,7 @@
     border-radius: $border-radius;
     border: transparent;
     box-shadow: 2px 0px 45px 6px #272d331e;
-    padding: 1.2rem 1.55rem;
+    padding: 1.65rem 2rem;
 
 }
 
@@ -22,6 +22,10 @@
     margin: 0px;
 
 }
+.modal-title {
+    padding-bottom: .13rem;
+}
+
 
 
 .modal-backdrop {

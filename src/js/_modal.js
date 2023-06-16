@@ -45,7 +45,7 @@ class Modal extends HTMLElement {
 
         modal_main_title.classList.add('modal-title', 'font-weight-lg')
         modal_main_title.innerText = modalmaintitle
-        modal_sub_title.classList.add('font-weight-md')
+        modal_sub_title.classList.add('font-weight-md', 'text-gray-500')
         modal_sub_title.innerText = modalsubtitle
 
         button_group.classList.add('d-grid', 'gap-2', 'd-flex', 'justify-content-end')

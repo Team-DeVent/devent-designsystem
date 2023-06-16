@@ -21,3 +21,5 @@ const dds = {
         }, 100)
     }
 }
+
+export default dds
